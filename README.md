@@ -12,3 +12,4 @@ Le esperienze riguardano:
 4- Calorimetria: stima della capacità termica di un materiale ignoto ([aggiungere nome file o cartella])
 
 
+Idea di organizzazione: creare delle cartelle per ogni esperienza contenenti i dati di loggerPro, gli stessi dati in formato csv, notebook ipynb per maneggiare attivamente i grafici e l'analisi dati, tek e pdf della relazione
