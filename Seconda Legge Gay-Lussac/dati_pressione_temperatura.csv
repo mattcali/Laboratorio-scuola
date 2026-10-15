@@ -1,4 +1,4 @@
-"Ultimo: Tempo (min)","Ultimo: Pressione (kPa)","Ultimo: Temperatura (°C)","Set dati 1: Tempo (s)","Set dati 1: Pressione (kPa)","Set dati 1: Temperatura (°C)"
+"Tempo (min)","Pressione (kPa)",Temperatura (C),"Set dati 1: Tempo (s)","Set dati 1: Pressione (kPa)","Set dati 1: Temperatura (°C)"
 0,103.057448448,26.7162876755,0,101.894313694,26.8018227768
 0.5,103.309224569,27.0947257743,0.5,101.883675266,26.8090718129
 1,103.575185259,27.5458859721,1,101.862398411,26.7916742068
