@@ -1,0 +1,5673 @@
+<Document>
+  <FileCoherence>1</FileCoherence>
+  <Version>3.7 i</Version>
+  <charset>utf-8</charset>
+  <ApplicationBuildDateTime>Nov 10 2009 00:09:39</ApplicationBuildDateTime>
+  <Copyright>Copyright (c) 2009 Vernier Software &#38; Technology e distributori autorizzati</Copyright>
+  <FileName>legge di Fourier.cmbl</FileName>
+  <FileIDString>06/11/2026 14:42:24Inserire qui il vostro nome2912930926</FileIDString>
+  <CreatorOS>2</CreatorOS>
+  <CreatorApp>1</CreatorApp>
+  <AbsoluteVersion>1</AbsoluteVersion>
+  <Radians>1</Radians>
+  <NumDerivativePoints>7</NumDerivativePoints>
+  <NumSmoothingPoints>7</NumSmoothingPoints>
+  <ShowZeroOnToolbar>0</ShowZeroOnToolbar>
+  <ShowGraphMatchOnToolbar>0</ShowGraphMatchOnToolbar>
+  <GraphMatchUseConstant>1</GraphMatchUseConstant>
+  <GraphMatchUseLinear>1</GraphMatchUseLinear>
+  <GraphMatchUseQuadratic>1</GraphMatchUseQuadratic>
+  <GraphMatchNumSections>0</GraphMatchNumSections>
+  <Stationery>0</Stationery>
+  <CreationDateTime>06/11/2026 14:42:24</CreationDateTime>
+  <ModifiedDateTime>06/11/2026 16:45:47</ModifiedDateTime>
+  <PageBounds>0 0 14.1875 6.46875</PageBounds>
+  <ScreenResolution>0 0 1365 767</ScreenResolution>
+  <MathType>0</MathType>
+  <AllowOptionsDialogs>1</AllowOptionsDialogs>
+  <AllowAutoCurveFit>1</AllowAutoCurveFit>
+  <ReplayWindowPosition>0 80 123 382 267 1</ReplayWindowPosition>
+  <ReplayWindowSpeed>1</ReplayWindowSpeed>
+  <ReplayWindowRepeat>0</ReplayWindowRepeat>
+  <SensorConflictEnabled>1</SensorConflictEnabled>
+  <MathConstantValue>3.141592653590</MathConstantValue>
+  <MathConstantNumPlaces>3</MathConstantNumPlaces>
+  <MathConstantIncrement>1.000000000000</MathConstantIncrement>
+  <MathConstantEditable>0</MathConstantEditable>
+  <MathConstantUnits></MathConstantUnits>
+  <MathConstantName>pi</MathConstantName>
+  <Page>
+    <ID>100 </ID>
+    <BroadcastTo>0 </BroadcastTo>
+    <Visible>1</Visible>
+    <PageTitle></PageTitle>
+    <PageColor>0xcccc 0xcccc 0xffff| 0xffff 0x1d</PageColor>
+    <PageDisplayPageInfo>0 </PageDisplayPageInfo>
+    <PagePageInfo></PagePageInfo>
+    <PageGraphPaper>0 </PageGraphPaper>
+    <PageGraphPaperLineSpacing>0.25 </PageGraphPaperLineSpacing>
+    <PageGraphPaperLineColor>0x8484 0x7070 0xffff| 0xffff 0x1e</PageGraphPaperLineColor>
+    <PageReplayWindowPosition>0 80 123 382 267</PageReplayWindowPosition>
+    <PageMeter>
+      <ID>119 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>0.0075 5.34421875 1.81288411458 5.885234375 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>0 0</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0x29</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>1</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 1 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <MeterColumnID>117</MeterColumnID>
+      <MeterUseShortName>0</MeterUseShortName>
+      <MeterDisplayBlackText>0</MeterDisplayBlackText>
+      <MeterAlarmEnabled>0</MeterAlarmEnabled>
+      <MeterAlarmAbove>1</MeterAlarmAbove>
+      <MeterAlarmValue>0</MeterAlarmValue>
+      <MeterAlertSound>0</MeterAlertSound>
+    </PageMeter>
+    <PageMeter>
+      <ID>125 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>0.0075 5.900234375 1.81288411458 6.44125 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>0 0</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0x29</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>1</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 1 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <MeterColumnID>123</MeterColumnID>
+      <MeterUseShortName>0</MeterUseShortName>
+      <MeterDisplayBlackText>0</MeterDisplayBlackText>
+      <MeterAlarmEnabled>0</MeterAlarmEnabled>
+      <MeterAlarmAbove>1</MeterAlarmAbove>
+      <MeterAlarmValue>0</MeterAlarmValue>
+      <MeterAlertSound>0</MeterAlertSound>
+    </PageMeter>
+    <PageMeter>
+      <ID>131 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>1.82788411458 5.34421875 3.63326822917 5.885234375 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>0 0</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0x29</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>1</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 1 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <MeterColumnID>129</MeterColumnID>
+      <MeterUseShortName>0</MeterUseShortName>
+      <MeterDisplayBlackText>0</MeterDisplayBlackText>
+      <MeterAlarmEnabled>0</MeterAlarmEnabled>
+      <MeterAlarmAbove>1</MeterAlarmAbove>
+      <MeterAlarmValue>0</MeterAlarmValue>
+      <MeterAlertSound>0</MeterAlertSound>
+    </PageMeter>
+    <PageMeter>
+      <ID>137 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>1.82788411458 5.900234375 3.63326822917 6.44125 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>0 0</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0x29</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>1</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 1 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <MeterColumnID>135</MeterColumnID>
+      <MeterUseShortName>0</MeterUseShortName>
+      <MeterDisplayBlackText>0</MeterDisplayBlackText>
+      <MeterAlarmEnabled>0</MeterAlarmEnabled>
+      <MeterAlarmAbove>1</MeterAlarmAbove>
+      <MeterAlarmValue>0</MeterAlarmValue>
+      <MeterAlertSound>0</MeterAlertSound>
+    </PageMeter>
+    <PageTable>
+      <ID>107 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>0.01125 0.000833333333333 3.64951822917 5.29505208333 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>0 -0.0104166666667</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xdada 0xdada 0xdada| 0xffff 0x2a</BackgroundColor>
+      <AddNewData>1</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>0</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 2 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <TableColumn> 115 0.6125 </TableColumn>
+      <TableColumn> 117 0.622916666667 </TableColumn>
+      <TableColumn> 123 0.560416666667 </TableColumn>
+      <TableColumn> 129 0.529166666667 </TableColumn>
+      <TableColumn> 135 0.508333333333 </TableColumn>
+      <StartIndex> 16 </StartIndex>
+      <DisplayBlackAndWhite> 0 </DisplayBlackAndWhite>
+    </PageTable>
+    <PageGraphCartesian>
+      <ID>106 </ID>
+      <BroadcastTo>1 154 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>3.51951822917 0.015 14.1725 6.45375 </Bounds>
+      <SubordinateToID>0</SubordinateToID>
+      <SubordinateOffset>0 0</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0x0</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>1</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 12 </Size>
+        <Justification> 0 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0x0 0x0 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+      <GraphTitle></GraphTitle>
+      <GraphTitleColor>0x0 0x0 0x0| 0xffff 0x2e</GraphTitleColor>
+      <GraphShowPoints>1</GraphShowPoints>
+      <GraphInterpolate>0</GraphInterpolate>
+      <GraphShowTangent>0</GraphShowTangent>
+      <GraphShowLegend>0</GraphShowLegend>
+      <GraphShowCursorStatus>1</GraphShowCursorStatus>
+      <GraphShowCursorDelta>1</GraphShowCursorDelta>
+      <GraphPlotBaseColumnID>115 </GraphPlotBaseColumnID>
+      <GraphPlotTraceIDPairs>4 115 117 115 123 115 129 115 135 </GraphPlotTraceIDPairs>
+      <LogXAxis>0</LogXAxis>
+      <LogYAxis>0</LogYAxis>
+      <LogRightYAxis>0</LogRightYAxis>
+      <GraphShowTraceErrorBars>1</GraphShowTraceErrorBars>
+      <GraphShowBaseErrorBars>1</GraphShowBaseErrorBars>
+      <GraphConnectLines>1</GraphConnectLines>
+      <GraphBarGraph>0</GraphBarGraph>
+      <BinGraphStackColumns>0</BinGraphStackColumns>
+      <GraphShowPointProtectors>0</GraphShowPointProtectors>
+      <GraphMajorTickStyle>1</GraphMajorTickStyle>
+      <GraphMajorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0x2b</GraphMajorTickColor>
+      <GraphMinorTickStyle>0</GraphMinorTickStyle>
+      <GraphMinorTickColor>0xc0c0 0xc0c0 0xc0c0| 0xffff 0x2b</GraphMinorTickColor>
+      <GraphPlotXAutoscale>3</GraphPlotXAutoscale>
+      <GraphPlotYAutoscale>3</GraphPlotYAutoscale>
+      <GraphPlotDoubleYAutoscale>3</GraphPlotDoubleYAutoscale>
+      <GraphPlotXAutoscaleOnFirstData>0</GraphPlotXAutoscaleOnFirstData>
+      <GraphPlotYAutoscaleOnFirstData>0</GraphPlotYAutoscaleOnFirstData>
+      <GraphPlotDoubleYAutoscaleOnFirstData>0</GraphPlotDoubleYAutoscaleOnFirstData>
+      <GraphPlotXAutoscaleHint>0</GraphPlotXAutoscaleHint>
+      <GraphPlotYAutoscaleHint>0</GraphPlotYAutoscaleHint>
+      <GraphPlotDoubleYAutoscaleHint>0</GraphPlotDoubleYAutoscaleHint>
+      <GraphPlotXMin>0</GraphPlotXMin>
+      <GraphPlotXMax>110</GraphPlotXMax>
+      <GraphPlotXTicksRotatedAngle>0</GraphPlotXTicksRotatedAngle>
+      <ShowAllValuesAsMajorTicks>0</ShowAllValuesAsMajorTicks>
+      <GraphPlotYMin>0</GraphPlotYMin>
+      <GraphPlotYMax>120</GraphPlotYMax>
+      <GraphPlotDefaultXMin>0</GraphPlotDefaultXMin>
+      <GraphPlotDefaultXMax>60</GraphPlotDefaultXMax>
+      <GraphPlotDefaultYMin>0</GraphPlotDefaultYMin>
+      <GraphPlotDefaultYMax>110</GraphPlotDefaultYMax>
+      <GraphPlotXLabel></GraphPlotXLabel>
+      <GraphPlotYLabel></GraphPlotYLabel>
+      <GraphDrawRainbow>0</GraphDrawRainbow>
+      <GraphPlotDoubleYAxis>0</GraphPlotDoubleYAxis>
+    </PageGraphCartesian>
+    <PageHelperPointsTangent>
+      <ID>154 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <Bounds>5.01951822917 0.265 6.44130338542 1.1432421875 </Bounds>
+      <SubordinateToID>106</SubordinateToID>
+      <SubordinateOffset>1.5 0.25</SubordinateOffset>
+      <BackgroundTransparent>0</BackgroundTransparent>
+      <BackgroundColor>0xffff 0xffff 0xffff| 0xffff 0x0</BackgroundColor>
+      <AddNewData>0</AddNewData>
+      <Locked>0</Locked>
+      <AutoCreated>0</AutoCreated>
+      <GraphLinkedIDs>0 </GraphLinkedIDs>
+      <YLinkedIDs>0 </YLinkedIDs>
+      <Font>
+        <Size> 9 </Size>
+        <Justification> 0 </Justification>
+        <VerticalJustification> 0 </VerticalJustification>
+        <Styles> 0 0 0 0 0 0 </Styles>
+        <Family> 3 </Family>
+        <Color>0xffff 0x7f7f 0x0| 0xffff 0x0</Color>
+        <Name>Arial</Name>
+        <Rotation>0</Rotation>
+      </Font>
+    </PageHelperPointsTangent>
+  </Page>
+  <CurrentPageIndex>0</CurrentPageIndex>
+  <DataSet>
+    <ID>114 </ID>
+    <BroadcastTo>2 4 107 </BroadcastTo>
+    <Visible>1</Visible>
+    <DataSetName>Ultimo</DataSetName>
+    <DataSetComments></DataSetComments>
+    <DataSetSourceName></DataSetSourceName>
+    <DataSetShowInDataBrowser>1</DataSetShowInDataBrowser>
+    <DataSetHistogram>0</DataSetHistogram>
+    <DataSetFFT>0</DataSetFFT>
+    <DataSetLatest>1</DataSetLatest>
+    <DataSetAutoCreated>0</DataSetAutoCreated>
+    <DataSetStoredRun>0</DataSetStoredRun>
+    <DataSetPrediction>0</DataSetPrediction>
+    <DataSetVideoAnalysis>0</DataSetVideoAnalysis>
+    <DataSetGraphMatch>0</DataSetGraphMatch>
+    <DataColumn>
+      <ID>115 </ID>
+      <BroadcastTo>2 106 107 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>Tempo</DataObjectName>
+      <DataObjectShortName>t</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectDataSource>0</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>1</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>1</DataObjectThickLines>
+      <ColumnUnits>min</ColumnUnits>
+      <ColumnCollectionTimeUnit>2</ColumnCollectionTimeUnit>
+      <ColumnProtected>1</ColumnProtected>
+      <ColumnUserEditable>0</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1793973123</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnGeoRole>n-a</ColumnGeoRole>
+      <ColumnGeoDisplay>DD</ColumnGeoDisplay>
+      <ColumnUserCreated>0</ColumnUserCreated>
+      <ColumnPPStyle>0</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>0</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>0</ColumnSensorColumn>
+      <ColumnSensorInputColumn>1</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>0</ColumnAllowUserDelete>
+      <ColumnMatchTag>Time</ColumnMatchTag>
+      <ColumnStartCollectTime>1793973123</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1</ColumnStart>
+      <ColumnEnd>100</ColumnEnd>
+      <ColumnIncrement>1</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>10</ColumnNumber>
+      <ColumnShowLiveReadout>0</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+      <ColumnGroupID>116</ColumnGroupID>
+      <ColumnCells>
+0
+0.1
+0.2
+0.3
+0.4
+0.5
+0.6
+0.7
+0.8
+0.9
+1
+1.1
+1.2
+1.3
+1.4
+1.5
+1.6
+1.7
+1.8
+1.9
+2
+2.1
+2.2
+2.3
+2.4
+2.5
+2.6
+2.7
+2.8
+2.9
+3
+3.1
+3.2
+3.3
+3.4
+3.5
+3.6
+3.7
+3.8
+3.9
+4
+4.1
+4.2
+4.3
+4.4
+4.5
+4.6
+4.7
+4.8
+4.9
+5
+5.1
+5.2
+5.3
+5.4
+5.5
+5.6
+5.7
+5.8
+5.9
+6
+6.1
+6.2
+6.3
+6.4
+6.5
+6.6
+6.7
+6.8
+6.9
+7
+7.1
+7.2
+7.3
+7.4
+7.5
+7.6
+7.7
+7.8
+7.9
+8
+8.1
+8.2
+8.3
+8.4
+8.5
+8.6
+8.7
+8.8
+8.9
+9
+9.1
+9.2
+9.3
+9.4
+9.5
+9.6
+9.7
+9.8
+9.9
+10
+10.1
+10.2
+10.3
+10.4
+10.5
+10.6
+10.7
+10.8
+10.9
+11
+11.1
+11.2
+11.3
+11.4
+11.5
+11.6
+11.7
+11.8
+11.9
+12
+12.1
+12.2
+12.3
+12.4
+12.5
+12.6
+12.7
+12.8
+12.9
+13
+13.1
+13.2
+13.3
+13.4
+13.5
+13.6
+13.7
+13.8
+13.9
+14
+14.1
+14.2
+14.3
+14.4
+14.5
+14.6
+14.7
+14.8
+14.9
+15
+15.1
+15.2
+15.3
+15.4
+15.5
+15.6
+15.7
+15.8
+15.9
+16
+16.1
+16.2
+16.3
+16.4
+16.5
+16.6
+16.7
+16.8
+16.9
+17
+17.1
+17.2
+17.3
+17.4
+17.5
+17.6
+17.7
+17.8
+17.9
+18
+18.1
+18.2
+18.3
+18.4
+18.5
+18.6
+18.7
+18.8
+18.9
+19
+19.1
+19.2
+19.3
+19.4
+19.5
+19.6
+19.7
+19.8
+19.9
+20
+20.1
+20.2
+20.3
+20.4
+20.5
+20.6
+20.7
+20.8
+20.9
+21
+21.1
+21.2
+21.3
+21.4
+21.5
+21.6
+21.7
+21.8
+21.9
+22
+22.1
+22.2
+22.3
+22.4
+22.5
+22.6
+22.7
+22.8
+22.9
+23
+23.1
+23.2
+23.3
+23.4
+23.5
+23.6
+23.7
+23.8
+23.9
+24
+24.1
+24.2
+24.3
+24.4
+24.5
+24.6
+24.7
+24.8
+24.9
+25
+25.1
+25.2
+25.3
+25.4
+25.5
+25.6
+25.7
+25.8
+25.9
+26
+26.1
+26.2
+26.3
+26.4
+26.5
+26.6
+26.7
+26.8
+26.9
+27
+27.1
+27.2
+27.3
+27.4
+27.5
+27.6
+27.7
+27.8
+27.9
+28
+28.1
+28.2
+28.3
+28.4
+28.5
+28.6
+28.7
+28.8
+28.9
+29
+29.1
+29.2
+29.3
+29.4
+29.5
+29.6
+29.7
+29.8
+29.9
+30
+30.1
+30.2
+30.3
+30.4
+30.5
+30.6
+30.7
+30.8
+30.9
+31
+31.1
+31.2
+31.3
+31.4
+31.5
+31.6
+31.7
+31.8
+31.9
+32
+32.1
+32.2
+32.3
+32.4
+32.5
+32.6
+32.7
+32.8
+32.9
+33
+33.1
+33.2
+33.3
+33.4
+33.5
+33.6
+33.7
+33.8
+33.9
+34
+34.1
+34.2
+34.3
+34.4
+34.5
+34.6
+34.7
+34.8
+34.9
+35
+35.1
+35.2
+35.3
+35.4
+35.5
+35.6
+35.7
+35.8
+35.9
+36
+36.1
+36.2
+36.3
+36.4
+36.5
+36.6
+41.1
+41.2
+41.3
+41.4
+41.5
+41.6
+41.7
+41.8
+41.9
+42
+42.1
+42.2
+42.3
+42.4
+42.5
+42.6
+42.7
+42.8
+42.9
+43
+43.1
+43.2
+43.3
+43.4
+43.5
+43.6
+43.7
+43.8
+43.9
+44
+44.1
+44.2
+44.3
+44.4
+44.5
+44.6
+44.7
+44.8
+44.9
+45
+45.1
+45.2
+45.3
+45.4
+45.5
+45.6
+45.7
+45.8
+45.9
+46
+46.1
+46.2
+46.3
+46.4
+46.5
+46.6
+46.7
+46.8
+46.9
+47
+47.1
+47.2
+47.3
+47.4
+47.5
+47.6
+47.7
+47.8
+47.9
+48
+48.1
+48.2
+48.3
+48.4
+48.5
+48.6
+48.7
+48.8
+48.9
+49
+49.1
+49.2
+49.3
+49.4
+49.5
+49.6
+49.7
+49.8
+49.9
+50
+50.1
+50.2
+50.3
+50.4
+50.5
+50.6
+50.7
+50.8
+50.9
+51
+51.1
+51.2
+51.3
+51.4
+51.5
+51.6
+51.7
+51.8
+51.9
+52
+52.1
+52.2
+52.3
+52.4
+52.5
+52.6
+52.7
+52.8
+52.9
+53
+53.1
+53.2
+53.3
+53.4
+53.5
+53.6
+53.7
+53.8
+53.9
+54
+54.1
+54.2
+54.3
+54.4
+54.5
+54.6
+54.7
+54.8
+54.9
+55
+55.1
+55.2
+55.3
+55.4
+55.5
+55.6
+55.7
+55.8
+55.9
+56
+56.1
+56.2
+56.3
+56.4
+56.5
+56.6
+56.7
+56.8
+56.9
+57
+57.1
+57.2
+57.3
+57.4
+57.5
+57.6
+57.7
+57.8
+57.9
+58
+58.1
+58.2
+58.3
+58.4
+58.5
+58.6
+58.7
+58.8
+58.9
+59
+59.1
+59.2
+59.3
+59.4
+59.5
+59.6
+59.7
+59.8
+59.9
+60
+60.1
+60.2
+60.3
+60.4
+60.5
+60.6
+60.7
+60.8
+60.9
+61
+61.1
+61.2
+61.3
+61.4
+61.5
+61.6
+61.7
+61.8
+61.9
+62
+62.1
+62.2
+62.3
+62.4
+62.5
+62.6
+62.7
+62.8
+62.9
+63
+63.1
+63.2
+63.3
+63.4
+63.5
+63.6
+63.7
+63.8
+63.9
+64
+64.1
+64.2
+64.3
+64.4
+64.5
+64.6
+64.7
+64.8
+64.9
+65
+65.1
+65.2
+65.3
+65.4
+65.5
+65.6
+65.7
+65.8
+65.9
+66
+66.1
+66.2
+66.3
+66.4
+66.5
+66.6
+66.7
+66.8
+66.9
+67
+67.1
+67.2
+67.3
+67.4
+67.5
+67.6
+67.7
+67.8
+67.9
+68
+68.1
+68.2
+68.3
+68.4
+68.5
+68.6
+68.7
+68.8
+68.9
+69
+69.1
+69.2
+69.3
+69.4
+69.5
+69.6
+69.7
+69.8
+69.9
+70
+70.1
+70.2
+70.3
+70.4
+70.5
+70.6
+70.7
+70.8
+70.9
+71
+71.1
+71.2
+71.3
+71.4
+71.5
+71.6
+71.7
+71.8
+71.9
+72
+72.1
+72.2
+72.3
+72.4
+72.5
+72.6
+72.7
+72.8
+72.9
+73
+73.1
+73.2
+73.3
+73.4
+73.5
+73.6
+73.7
+73.8
+73.9
+74
+74.1
+74.2
+74.3
+74.4
+74.5
+74.6
+74.7
+74.8
+74.9
+75
+75.1
+75.2
+75.3
+75.4
+75.5
+75.6
+75.7
+75.8
+75.9
+76
+76.1
+76.2
+76.3
+76.4
+76.5
+76.6
+76.7
+76.8
+76.9
+77
+77.1
+77.2
+77.3
+77.4
+77.5
+77.6
+77.7
+77.8
+77.9
+78
+78.1
+78.2
+78.3
+78.4
+78.5
+78.6
+78.7
+78.8
+78.9
+79
+79.1
+79.2
+79.3
+79.4
+79.5
+79.6
+79.7
+79.8
+79.9
+80
+80.1
+80.2
+80.3
+80.4
+80.5
+80.6
+80.7
+80.8
+80.9
+81
+81.1
+81.2
+81.3
+81.4
+81.5
+81.6
+81.7
+81.8
+81.9
+82
+82.1
+82.2
+82.3
+82.4
+82.5
+82.6
+82.7
+82.8
+82.9
+83
+83.1
+83.2
+83.3
+83.4
+83.5
+83.6
+83.7
+83.8
+83.9
+84
+84.1
+84.2
+84.3
+84.4
+84.5
+84.6
+84.7
+84.8
+84.9
+85
+85.1
+85.2
+85.3
+85.4
+85.5
+85.6
+85.7
+85.8
+85.9
+86
+86.1
+86.2
+86.3
+86.4
+86.5
+86.6
+86.7
+86.8
+86.9
+87
+87.1
+87.2
+87.3
+87.4
+87.5
+87.6
+87.7
+87.8
+87.9
+88
+88.1
+88.2
+88.3
+88.4
+88.5
+88.6
+88.7
+88.8
+88.9
+89
+89.1
+89.2
+89.3
+89.4
+89.5
+89.6
+89.7
+89.8
+89.9
+90
+90.1
+90.2
+90.3
+90.4
+90.5
+90.6
+90.7
+90.8
+90.9
+91
+91.1
+91.2
+91.3
+91.4
+91.5
+91.6
+91.7
+91.8
+91.9
+92
+92.1
+92.2
+92.3
+92.4
+92.5
+92.6
+92.7
+92.8
+92.9
+93
+93.1
+93.2
+93.3
+93.4
+93.5
+93.6
+93.7
+93.8
+93.9
+94
+94.1
+94.2
+94.3
+94.4
+94.5
+94.6
+94.7
+94.8
+94.9
+95
+95.1
+95.2
+95.3
+95.4
+95.5
+95.6
+95.7
+95.8
+95.9
+96
+96.1
+96.2
+96.3
+96.4
+96.5
+96.6
+96.7
+96.8
+96.9
+97
+97.1
+97.2
+97.3
+97.4
+97.5
+97.6
+97.7
+97.8
+97.9
+98
+98.1
+98.2
+98.3
+98.4
+98.5
+98.6
+98.7
+98.8
+98.9
+99
+99.1
+99.2
+99.3
+99.4
+99.5
+99.6
+99.7
+99.8
+99.9
+100
+100.1
+100.2
+100.3
+100.4
+100.5
+100.6
+100.7
+100.8
+100.9
+101
+101.1
+</ColumnCells>
+    </DataColumn>
+    <DataColumn>
+      <ID>117 </ID>
+      <BroadcastTo>4 4 106 107 119 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>Temperatura 1</DataObjectName>
+      <DataObjectShortName>Temp 1</DataObjectShortName>
+      <DataObjectColor>0xffff 0x0 0x3333| 0xffff 0x0</DataObjectColor>
+      <DataObjectDataSource>138</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>1</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>1</DataObjectThickLines>
+      <ColumnUnits>&#176;C</ColumnUnits>
+      <ColumnProtected>1</ColumnProtected>
+      <ColumnUserEditable>0</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1793972550</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnGeoRole>n-a</ColumnGeoRole>
+      <ColumnGeoDisplay>DD</ColumnGeoDisplay>
+      <ColumnUserCreated>0</ColumnUserCreated>
+      <ColumnPPStyle>1</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>1</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>1</ColumnSensorColumn>
+      <ColumnSensorInputColumn>1</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>0</ColumnAllowUserDelete>
+      <ColumnMatchTag>Temperatura</ColumnMatchTag>
+      <ColumnStartCollectTime>0</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1</ColumnStart>
+      <ColumnEnd>100</ColumnEnd>
+      <ColumnIncrement>1</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>10</ColumnNumber>
+      <ColumnShowLiveReadout>1</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+      <ColumnGroupID>118</ColumnGroupID>
+      <ColumnCells>
+22.3930560381
+22.3974270064
+22.4003409514
+22.4105395466
+22.4149102721
+22.4149102721
+22.4221946802
+22.4323925699
+22.4353061925
+22.4469604159
+22.4498739051
+22.4571575118
+22.4673542827
+22.476094114
+22.4862902839
+22.497942655
+22.5183332965
+22.5503731587
+22.579497599
+22.6231794791
+22.6945144034
+22.7512806115
+22.8254995265
+22.885154601
+22.9782554374
+23.0640625356
+23.1789274672
+23.2981202756
+23.4071090456
+23.5596491166
+23.7048802093
+23.8674903589
+24.0474677707
+24.2317448408
+24.4333774428
+24.6320583607
+24.8640408424
+25.0814817722
+25.3264279438
+25.5771444172
+25.9118981792
+26.1814465987
+26.4568178469
+26.7438321841
+27.035267733
+27.3369535617
+27.6605374858
+27.9683233855
+28.2980937122
+28.6731990726
+29.0079017751
+29.3618751504
+29.7235462939
+30.0856783076
+30.4585573329
+30.8349469474
+31.2105044743
+31.5940964959
+31.9946612844
+32.3931509416
+32.8058954585
+33.1944463596
+33.6048207652
+34.0253055772
+34.4350773021
+34.8911941249
+35.3097354456
+35.7282039943
+36.154247051
+36.5697066412
+37.005127621
+37.4423618312
+37.9340064041
+38.3644847066
+38.8109618873
+39.2517848042
+39.6821990371
+40.127422211
+40.565458581
+41.0474507444
+41.4695757684
+41.9101779658
+42.3565954103
+42.7909601581
+43.2312218486
+43.6576344794
+44.084992101
+44.558683965
+44.9934553773
+45.4277051813
+45.8683100882
+46.3102579309
+46.7483951788
+47.1721691281
+47.6165527771
+48.0820363932
+48.5297479947
+48.9629074194
+49.397563872
+49.8246123223
+50.2457408853
+50.685016539
+51.109127614
+51.5498689953
+52.0477570011
+52.4695361858
+52.8850934481
+53.3060243396
+53.7048498536
+54.1267760023
+54.5543415169
+54.971505959
+55.3677977873
+55.8374008123
+56.2368107417
+56.6207708562
+57.001570266
+57.387649139
+57.7726942123
+58.1761772729
+58.5723469884
+58.9874755866
+59.3797726985
+59.7463762848
+60.134164377
+60.5139908729
+60.8925499249
+61.2697993668
+61.6480403403
+62.0604278249
+62.4410005379
+62.8636273987
+63.2515577459
+63.6406652802
+63.9937564035
+64.3674006861
+64.6914703811
+65.0410112686
+65.3089867334
+65.6174235753
+65.9490332291
+66.2833919689
+66.5914702425
+66.9179248612
+67.2739543924
+67.6332044402
+67.9957470025
+68.3450755645
+68.7059050406
+69.067280175
+69.4235164889
+69.7572595477
+70.1141404003
+70.4393473238
+70.8556586001
+71.1872379373
+71.4887401507
+71.8138013759
+72.1081448747
+72.4017230403
+72.7347479347
+73.0051742167
+73.3341622642
+73.6089550872
+73.9305190321
+74.21296893
+74.4716128482
+74.7843792828
+75.0503420743
+75.3115908528
+75.6215221113
+75.9003436765
+76.1541197662
+76.4438670373
+76.6979943277
+77.0198917392
+77.2920730654
+77.5275015996
+77.8106174999
+78.0673193615
+78.343870243
+78.5862331828
+78.8704456987
+79.138478454
+79.3602788018
+79.6469361868
+79.8455799622
+80.1285676932
+80.3489503814
+80.6167450117
+80.8517519525
+81.1116650814
+81.2990401481
+81.5425304551
+81.7401112342
+81.9946234836
+82.250968201
+82.4565739634
+82.6837160967
+82.8754814405
+83.1012122256
+83.2952553659
+83.5320201569
+83.7410212697
+83.9091164723
+84.1373214528
+84.3712792719
+84.5767368384
+84.7920367628
+85.1305562321
+85.3448943723
+85.5517197444
+85.7642105462
+85.9779959251
+86.1661332853
+86.3417412722
+86.486490363
+86.5681754843
+86.7001816227
+86.9197750593
+87.1269040789
+87.2888575731
+87.5075262003
+87.7369680071
+87.9395657901
+88.1290917914
+88.3578922968
+88.5689549885
+88.766785815
+88.9900899731
+89.1560676209
+89.352355845
+89.5101889877
+89.6737093671
+89.8929419259
+90.0231426303
+90.2294575471
+90.3406713903
+90.5539849804
+90.6918120294
+90.8815815326
+91.0465496502
+91.2123079718
+91.3945202342
+91.6144499322
+91.7724036954
+91.9682129903
+92.1811548114
+92.3202744943
+92.5030503151
+92.654301822
+92.8279765238
+92.920598114
+93.0901393985
+93.2660286557
+93.3598361627
+93.5315570693
+93.6205231994
+93.7097196798
+93.8103425882
+93.9787035351
+94.0744747594
+94.2498052742
+94.3577090327
+94.4317333395
+94.4374341181
+94.5230593302
+94.7064418077
+94.8042628441
+94.9833618198
+95.2450154714
+95.4499097515
+95.5498723072
+95.7329089921
+95.8277624443
+95.9705355197
+96.2098174779
+96.348163372
+96.5052285948
+96.6022425109
+96.7909908478
+96.9869228146
+97.085309925
+97.282934609
+97.3821755082
+97.4941657895
+97.6440572446
+97.8260545142
+97.9774068688
+98.1802549333
+98.256633457
+98.3140292331
+98.3907067309
+98.4675561361
+98.596022618
+98.6991436314
+98.8998279345
+99.0103816373
+99.1147590284
+99.2194553575
+99.3244725969
+99.4364072629
+99.5354777862
+99.5354777862
+99.6083120324
+99.7344825541
+99.8144093165
+99.9614278835
+100.028463694
+100.129264069
+100.284403176
+100.392742038
+100.535458935
+100.651428902
+100.740377589
+100.829557939
+100.918971168
+100.939638191
+100.946529971
+101.05698754
+101.160866151
+101.272018497
+101.383532879
+101.495411674
+101.607657276
+101.685040162
+101.720272107
+101.812045216
+101.946619249
+102.060356518
+102.181617854
+102.33200674
+102.418240813
+102.519122557
+102.526339785
+102.634781195
+102.736304052
+102.816283772
+102.947564093
+102.984120375
+103.101363505
+103.182201719
+103.337061322
+103.403644775
+103.455521588
+103.507477133
+103.574393193
+103.693678999
+103.813381896
+103.918466371
+103.933504804
+103.971129813
+104.054050673
+104.144739434
+104.288823073
+104.296423245
+104.304025105
+104.296423245
+104.296423245
+104.296423245
+104.296423245
+104.296423245
+104.304025105
+104.296423245
+104.258439245
+104.296423245
+104.410628741
+106.95061058
+106.95061058
+106.95061058
+106.967041385
+107.074034055
+107.082278111
+107.098772176
+107.214453409
+107.255862936
+107.330526382
+107.347140367
+107.380392514
+107.463664272
+107.480342924
+107.480342924
+107.480342924
+107.480342924
+107.505376126
+107.580585597
+107.60569213
+107.614065061
+107.614065061
+107.622440038
+107.731501315
+107.748310807
+107.756718644
+107.824055667
+107.891525188
+107.883084234
+107.883084234
+107.89996822
+107.933761152
+107.967587418
+108.018389463
+108.018389463
+108.137221055
+108.162738626
+108.299153908
+108.359006628
+108.427537865
+108.427537865
+108.436113905
+108.513394898
+108.565012451
+108.573622932
+108.65121467
+108.703040159
+108.703040159
+108.728982289
+108.815597996
+108.841625402
+108.841625402
+108.841625402
+108.841625402
+108.841625402
+108.850305594
+108.858987982
+108.945932903
+109.0156478
+109.05929164
+109.050558431
+109.05929164
+109.033098676
+108.841625402
+108.798257353
+108.824271605
+108.841625402
+108.885048334
+109.05929164
+109.120486412
+109.129237437
+109.120486412
+109.120486412
+109.137990693
+109.173026061
+109.155503907
+109.181790494
+109.260771268
+109.260771268
+109.269558138
+109.278347259
+109.260771268
+109.260771268
+109.269558138
+109.401631839
+109.472279478
+109.507657894
+109.419280123
+109.410454847
+109.419280123
+109.445769573
+109.516508198
+109.543072806
+109.543072806
+109.551932246
+109.543072806
+109.543072806
+109.428107668
+109.260771268
+109.120486412
+109.120486412
+109.120486412
+109.243204272
+109.260771268
+109.260771268
+109.260771268
+109.260771268
+109.269558138
+109.366362468
+109.410454847
+109.463440568
+109.543072806
+109.631770245
+109.702893549
+110.250107598
+110.259151353
+110.259151353
+110.26819749
+110.386014555
+110.413260583
+110.522461275
+110.632010127
+110.705237199
+110.714401564
+110.732737629
+110.723568374
+110.732737629
+110.760260083
+110.796991006
+110.769439134
+110.732737629
+110.723568374
+110.705237199
+110.696075277
+110.696075277
+110.686915798
+110.659451997
+110.686915798
+110.696075277
+110.732737629
+110.842959932
+110.842959932
+110.842959932
+110.833761227
+110.760260083
+110.696075277
+110.696075277
+110.54069518
+110.404176172
+110.304405878
+110.26819749
+110.27724601
+110.349720096
+110.413260583
+110.476918801
+110.449622263
+110.404176172
+110.404176172
+110.476918801
+110.549815763
+110.549815763
+110.467817545
+110.431436613
+110.4587187
+110.604590155
+110.705237199
+110.842959932
+110.870570828
+110.990475007
+111.110798889
+110.999715753
+110.990475007
+110.999715753
+110.990475007
+110.935082639
+110.870570828
+110.861364731
+110.944308503
+110.916638334
+110.8521611
+110.8521611
+110.8521611
+110.898203922
+110.944308503
+110.981236745
+110.981236745
+110.990475007
+110.944308503
+110.907419892
+110.907419892
+110.898203922
+110.8521611
+110.842959932
+110.842959932
+110.732737629
+110.696075277
+110.622867705
+110.313463941
+110.150783119
+109.685098906
+109.614012416
+109.543072806
+109.472279478
+109.357550784
+109.260771268
+109.190557166
+109.050558431
+108.841625402
+108.703040159
+108.565012451
+108.427537865
+108.162738626
+108.018389463
+107.883084234
+107.731501315
+107.614065061
+107.363762409
+107.098772176
+106.95061058
+106.623638061
+106.428941731
+106.058838226
+105.915096572
+105.65312665
+105.416698481
+105.275621049
+105.034008426
+104.801801743
+104.540523828
+104.304025105
+104.001259621
+103.693678999
+103.455521588
+103.101363505
+102.736304052
+102.432634302
+102.110235647
+101.833258609
+101.607657276
+101.272018497
+100.994811317
+100.808957232
+100.515034355
+100.284403176
+99.9882264649
+99.84109307
+99.5354777862
+99.2916201169
+99.0103816373
+98.6024585992
+98.2885081345
+98.0153495767
+97.782035624
+97.4817043532
+97.1963337033
+96.8949404015
+96.596171102
+96.2879444805
+95.9050241888
+95.5439841007
+95.0761662595
+94.7064418077
+94.4146366683
+94.0688337772
+93.7599943881
+93.4428200722
+93.0627375833
+92.6705467343
+92.3470926691
+91.9841381671
+91.6302128644
+91.27467267
+90.9639673035
+90.7173958593
+90.472567728
+90.2294575471
+89.9880404868
+89.748292236
+89.5151328513
+89.0583377515
+88.6604928573
+88.3722423586
+88.095850249
+87.8122157924
+87.5168616997
+87.265675337
+87.0116808983
+86.7001816227
+86.4728946878
+86.1436829576
+85.9065892599
+85.6135634758
+85.4063746949
+85.1305562321
+84.7833994471
+84.5338343022
+84.2349696774
+83.8291715356
+83.5028583125
+83.2290787171
+82.9656013662
+82.7488816385
+82.5091740713
+82.250968201
+81.9507495673
+81.7282254621
+81.4874034013
+81.1740143316
+80.9097776185
+80.6205851797
+80.3794544677
+80.1285676932
+79.8869456974
+79.6506740541
+79.4270857135
+79.2122605364
+78.8887408275
+78.5898628473
+78.3510815428
+78.0673193615
+77.8461623379
+77.6122054783
+77.3130943761
+76.9122776093
+76.5535437976
+76.2527180151
+75.9475825321
+75.6885153977
+75.4912340729
+75.2585305059
+74.9976547249
+74.7157361907
+74.3679395049
+74.0682671113
+73.8283376727
+73.5487705883
+73.2461499037
+72.9459495579
+72.6419458024
+72.3925141472
+72.1782741455
+71.9864892341
+71.8168242272
+71.662964613
+71.5277211804
+71.3272444981
+71.1159427503
+70.8615545332
+70.6205618806
+70.2531786645
+69.9295322208
+69.6599777786
+69.3837730982
+69.1546235634
+68.9155995316
+68.7059050406
+68.533402594
+68.3616563351
+68.2264511364
+68.0862195572
+67.9109464524
+67.7391694576
+67.5681360255
+67.3223846926
+67.0460497585
+66.8247593409
+66.6126221905
+66.3989729896
+66.1786061232
+65.9542362957
+65.7802976827
+65.5813181644
+65.4166731699
+65.2475794873
+65.0562767608
+64.7975364535
+64.5806472504
+64.372405565
+64.1975957459
+64.050829418
+63.9194315133
+63.7613162078
+63.5964323963
+63.4370929773
+63.2539936525
+63.0183688142
+62.8081562031
+62.5846023354
+62.3956282036
+62.2312628717
+62.0675322492
+61.9091487373
+61.7208019728
+61.4958761037
+61.313988861
+61.1606830255
+61.0194745328
+60.8764225636
+60.7177732163
+60.5619883571
+60.3703147972
+60.2293794273
+60.0662800595
+59.930825549
+59.7755667935
+59.6141383275
+59.4532970165
+59.2908152168
+59.1333524355
+58.9918891053
+58.8508719831
+58.7102971442
+58.5723469884
+58.43045884
+58.2846699203
+58.1350180088
+57.9901742223
+57.8113772399
+57.641844404
+57.4814735983
+57.3174059923
+57.162398349
+57.0396107407
+56.9150386612
+56.7550629951
+56.5998225129
+56.4346590549
+56.286715033
+56.1288655294
+56.0108234817
+55.8559515528
+55.6933635222
+55.492438825
+55.3290411579
+55.1621327465
+55.0322627326
+54.890615189
+54.7816259006
+54.65075784
+54.5062045243
+54.3580789516
+54.2183697896
+54.0810427021
+53.9639196589
+53.8510288538
+53.75813578
+53.6417697081
+53.5060231509
+53.3471356358
+53.1965577203
+53.0678469807
+52.9433477194
+52.8133380997
+52.6643317564
+52.5408112624
+52.4387450634
+52.323441767
+52.1949895407
+52.0802270467
+51.9676235293
+51.8609698706
+51.7450402866
+51.5404130305
+51.4063205414
+51.2895025614
+51.1673070192
+51.0678773973
+50.9536677295
+50.8397005259
+50.7166627404
+50.5716145446
+50.4380671004
+50.3362718045
+50.1959203583
+50.0724864929
+49.921793483
+49.7898152089
+49.6855543323
+49.5413739522
+49.397563872
+49.2504937963
+49.1345604587
+49.0188636099
+48.907006076
+48.800763985
+48.7072898555
+48.6139674121
+48.4975262123
+48.386676987
+48.2724732838
+48.1656099611
+48.0465092343
+47.9418289133
+47.7913438428
+47.6624078295
+47.5636868396
+47.4668871218
+47.3667319304
+47.2755073827
+47.1861707637
+47.1249374533
+47.0410605682
+46.9485804364
+46.84405448
+46.7258065111
+46.6060510168
+46.4865266946
+46.3775960513
+46.2550601815
+46.1551377777
+46.0399070899
+45.9266010661
+45.8152088805
+45.7108481134
+45.633969452
+45.5759442653
+45.4958188726
+45.3919741284
+45.2984857981
+45.2085237286
+45.1169913024
+45.0002184751
+44.9055980273
+44.8009970212
+44.7251798075
+44.6460847425
+44.5670829449
+44.5116690418
+44.4479154822
+44.3875728087
+44.2637034554
+44.1901581212
+44.1066798159
+44.0066397225
+43.9050809609
+43.8136391635
+43.7107033147
+43.6294580197
+43.5218286805
+43.4391486626
+43.3615174818
+43.283971107
+43.2279263141
+43.1439414448
+43.0748512179
+43.0025420526
+42.9270234398
+42.8450271304
+42.7876846603
+42.7091167328
+42.6077576657
+42.5244861607
+42.438048363
+42.3517110652
+42.2687260363
+42.1988296537
+42.1257518057
+42.0673404583
+41.9846681145
+41.9263652817
+41.869724687
+41.7872662501
+41.7291135748
+41.6564843897
+41.5468627798
+41.4486570343
+41.3602164779
+41.279902257
+41.1964620519
+41.1499662213
+41.0682635428
+40.9898435365
+40.8731556043
+40.7997127886
+40.7470665062
+40.6689575225
+40.6148033142
+40.560684857
+40.498651621
+40.4287213247
+40.3540881681
+40.300139922
+40.2351309905
+40.1606705048
+40.1036814489
+40.0293368422
+39.9313646707
+39.8335047582
+39.7546666083
+39.7058231019
+39.6444139068
+39.586193968
+39.5374449911
+39.5012939338
+39.447880498
+39.3929299035
+39.3301710339
+39.2784283744
+39.2282823812
+39.1609429925
+39.1202506759
+</ColumnCells>
+    </DataColumn>
+    <DataColumn>
+      <ID>123 </ID>
+      <BroadcastTo>4 4 106 107 125 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>Temperatura 2</DataObjectName>
+      <DataObjectShortName>Temp 2</DataObjectShortName>
+      <DataObjectColor>0x0 0x0 0xffff| 0xffff 0x0</DataObjectColor>
+      <DataObjectDataSource>138</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>1</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>1</DataObjectThickLines>
+      <ColumnUnits>&#176;C</ColumnUnits>
+      <ColumnProtected>1</ColumnProtected>
+      <ColumnUserEditable>0</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1793972550</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnGeoRole>n-a</ColumnGeoRole>
+      <ColumnGeoDisplay>DD</ColumnGeoDisplay>
+      <ColumnUserCreated>0</ColumnUserCreated>
+      <ColumnPPStyle>2</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>1</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>1</ColumnSensorColumn>
+      <ColumnSensorInputColumn>1</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>0</ColumnAllowUserDelete>
+      <ColumnMatchTag>Temperatura</ColumnMatchTag>
+      <ColumnStartCollectTime>0</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1</ColumnStart>
+      <ColumnEnd>100</ColumnEnd>
+      <ColumnIncrement>1</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>10</ColumnNumber>
+      <ColumnShowLiveReadout>1</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+      <ColumnGroupID>124</ColumnGroupID>
+      <ColumnCells>
+22.5663919183
+22.5707605361
+22.5751290964
+22.5809537538
+22.5838660443
+22.5867783092
+22.5896905487
+22.5984271144
+22.6057074114
+22.6188115474
+22.6319151728
+22.6479300247
+22.6522975803
+22.6581209005
+22.659576715
+22.6624883253
+22.6639441211
+22.6624883253
+22.6624883253
+22.659576715
+22.659576715
+22.659576715
+22.6624883253
+22.6639441211
+22.6697672424
+22.6741345182
+22.679957466
+22.6886917024
+22.6901473869
+22.697425717
+22.6988813646
+22.7032482705
+22.7090707259
+22.7178042255
+22.725081974
+22.7352705664
+22.7541914502
+22.7643791961
+22.7774772942
+22.790574908
+22.8007616074
+22.8153135312
+22.8313199657
+22.8458706534
+22.8764251998
+22.901157965
+22.9171606359
+22.9447999918
+22.9753463857
+22.9928003619
+23.0277059249
+23.0655167296
+23.0931453928
+23.1396735318
+23.1774736853
+23.2094556992
+23.2617845889
+23.3024803502
+23.3518914551
+23.3983909346
+23.4579613356
+23.516071338
+23.5654591861
+23.6366268934
+23.6976196552
+23.7571531866
+23.8224871208
+23.9052322
+23.9676459153
+24.0431141232
+24.1214751171
+24.1998265345
+24.2839716094
+24.3739087841
+24.4638352498
+24.549401112
+24.6393086357
+24.730657368
+24.8292467318
+24.9234783713
+25.0220514496
+25.1249658714
+25.2278736592
+25.3249786492
+25.4351226001
+25.5510591712
+25.7336534807
+25.843788328
+25.9524744604
+26.066958949
+26.1828958356
+26.3118811711
+26.424930798
+26.5466847144
+26.6771465629
+26.7902244187
+26.9178133392
+27.0541198435
+27.1715923659
+27.3035882717
+27.4370588949
+27.5734584328
+27.7098879273
+27.8361864693
+27.9697756263
+28.1019472395
+28.2225310725
+28.3649483281
+28.4957810672
+28.6717445016
+28.8259600944
+28.9656829778
+29.1229379287
+29.2729814502
+29.4187220498
+29.5805751513
+29.7352205492
+29.8841099567
+30.0476899636
+30.2055241881
+30.3488290118
+30.5068535933
+30.6430142895
+30.8012370645
+30.9566382781
+31.0989421221
+31.260433248
+31.4088228089
+31.5749728951
+31.7339032776
+31.8900195826
+32.0359448622
+32.2026496448
+32.3517841088
+32.5069611865
+32.6652404234
+32.7970084044
+32.915542621
+33.0534491224
+33.1766291241
+33.332600047
+33.4738547991
+33.630134429
+33.7716742056
+33.9282752105
+34.1059666811
+34.2808944154
+34.445562184
+34.6689376987
+34.8265799849
+34.9874248872
+35.1635375104
+35.3278339192
+35.4848006135
+35.6586091024
+35.8266151347
+35.982730109
+36.154247051
+36.3245038015
+36.4950217269
+36.6474943871
+36.8169913015
+36.9729830543
+37.133804645
+37.305622528
+37.4685014967
+37.6239416697
+37.8289998599
+38.0004658259
+38.1428110841
+38.2884685889
+38.4126080378
+38.5431304061
+38.6909648577
+38.8499556414
+38.9904710858
+39.1390294546
+39.2878338909
+39.4431691048
+39.6034985354
+39.7420591906
+39.8966273843
+40.0451493819
+40.1986846362
+40.3540881681
+40.5225050313
+40.6801113709
+40.8332327636
+41.0330450568
+41.1932545684
+41.3473606953
+41.5178711693
+41.6564843897
+41.8244424053
+41.9652288741
+42.1257518057
+42.2589691413
+42.4021980776
+42.5457033103
+42.6698643656
+42.81225448
+42.9598479343
+43.0912952481
+43.2229832974
+43.3796788618
+43.5135563173
+43.6576344794
+43.8086548915
+43.936698012
+44.0683139036
+44.2018532161
+44.385897391
+44.5234196952
+44.6612233696
+44.7925686251
+44.9224846134
+45.0120555641
+45.0882019434
+45.1474879151
+45.2526405794
+45.364763661
+45.4873007404
+45.6066569667
+45.7450460073
+45.8820208101
+46.0175732134
+46.1499736914
+46.2792032166
+46.42598617
+46.5350015711
+46.6233925159
+46.6841260852
+46.7588235122
+46.8527581704
+46.9869514068
+47.1039573848
+47.2387057392
+47.3333838822
+47.4159101174
+47.4967903373
+47.5848276011
+47.6941743161
+47.8603424191
+47.9684249285
+48.0607175206
+48.1994288851
+48.3241940909
+48.436711704
+48.5422835355
+48.6552259997
+48.7432234404
+48.8781751616
+48.9827565531
+49.1200854574
+49.2396149499
+49.3757514758
+49.4830773501
+49.5778401666
+49.6581496648
+49.7751703108
+49.9089484611
+50.052247663
+50.1424597436
+50.2272835607
+50.2734385339
+50.3196324428
+50.376967143
+50.4732769582
+50.5939043972
+50.696183672
+50.7949270376
+50.8770402178
+51.0004455443
+51.0922486792
+51.1785748768
+51.2876205041
+51.3987761319
+51.5952812255
+51.733651203
+51.819129636
+51.9218881667
+52.0248491516
+52.1241893848
+52.2218039956
+52.3100064649
+52.4272031335
+52.5543068536
+52.701059247
+52.8152761071
+52.9588934582
+53.0756383304
+53.178986973
+53.2395341662
+53.2708127469
+53.3490941535
+53.4431927451
+53.5355020033
+53.6476800908
+53.7423414236
+53.8055488952
+53.8985305679
+53.9778011525
+54.0333660197
+54.0790552566
+54.122797514
+54.1884835742
+54.2562516799
+54.3480865631
+54.4661264649
+54.5683903947
+54.6929998975
+54.7997738293
+54.922955316
+55.0201052791
+55.1032421577
+55.2068563401
+55.2801300172
+55.2882784223
+55.2882784223
+55.3127319188
+55.3780020973
+55.4494930544
+55.5497597992
+55.6235592355
+55.7077476753
+55.8064989805
+55.9075194092
+56.0190975386
+56.1247187132
+56.2347325422
+56.3429206257
+56.4200523218
+56.503580647
+56.6102955123
+56.7256535801
+56.8034187474
+56.872886493
+56.9572290696
+57.0396107407
+57.1221389681
+57.2005711495
+57.287638158
+57.4089560954
+57.4814735983
+57.5733509998
+57.6225702945
+57.6632695894
+57.6954261627
+57.7490706846
+57.8264294863
+57.8953030083
+57.9642806629
+58.0312024951
+58.1025501827
+58.1696759601
+58.2412416974
+58.2759809446
+58.2803252241
+58.2434121203
+58.2390713784
+58.2412416974
+58.2694653065
+58.3085732035
+58.3107468552
+58.2890150333
+58.2933605633
+58.3129206112
+61.0356553419
+61.109702076
+61.156045902
+61.2024396059
+61.2581780924
+61.3000293787
+61.3745323869
+61.4095001919
+61.4444964992
+61.4818573793
+61.5309429823
+61.5660385792
+61.6152207811
+61.7067094072
+61.7466504218
+61.8125171626
+61.8572704218
+61.8572704218
+61.8572704218
+61.8572704218
+61.8973526648
+61.9658154017
+61.9776304551
+61.9989058204
+62.0320219941
+62.0651639758
+62.1078131029
+62.162371602
+62.1647453019
+62.1742414292
+62.2003667425
+62.2740793309
+62.293122763
+62.3121747599
+62.3336185067
+62.3550731206
+62.3956282036
+62.4649002888
+62.5055609182
+62.5798077295
+62.618179848
+62.6613902704
+62.7070494011
+62.7720187307
+62.8129768801
+62.8539749728
+62.8901830124
+62.9264222988
+62.95785501
+63.0062590647
+63.0450225852
+63.0474464961
+63.0183688142
+63.0038375345
+62.9844703262
+63.0038375345
+63.0377516935
+63.0838220005
+63.1493776493
+63.2296409749
+63.2759232062
+63.3198168923
+63.3857441036
+63.2856733717
+63.2418155395
+63.2613022246
+63.3027416415
+63.3906317485
+63.4370929773
+63.5007555725
+63.5105584621
+63.5130095452
+63.5277190758
+63.5571537445
+63.5890648226
+63.5964323963
+63.6283736453
+63.6480420068
+63.6627993904
+63.6308316815
+63.5915205354
+63.5645156667
+63.5473398744
+63.5375283187
+63.5130095452
+63.5032060785
+63.4909549907
+63.4983052108
+63.5105584621
+63.5522465201
+63.5939763933
+63.6308316815
+63.6849453009
+63.7095657277
+63.7095657277
+63.7071030279
+63.6505012067
+63.5964323963
+63.5105584621
+63.4175240421
+63.3955199663
+63.4395397404
+63.5473398744
+63.5964323963
+63.6775620186
+63.7120285736
+63.7514539963
+63.8304174337
+63.8922124634
+63.9540998471
+64.0334510264
+64.0806379622
+64.162722581
+64.2225232157
+64.3023925824
+64.342385418
+64.342385418
+64.3473872554
+64.3849204266
+64.4425378885
+64.5052573029
+64.5479612728
+64.6234297789
+64.6738193765
+64.7040828986
+64.7116522733
+64.757097924
+64.8000651889
+64.8962731724
+64.9089489906
+64.9140204192
+64.9165563696
+64.9089489906
+64.7899511849
+64.7672038113
+64.7469945308
+64.7166993004
+64.744469072
+64.7899511849
+64.8051231285
+64.8228308435
+64.7975364535
+64.7823673221
+64.7394186217
+64.7040828986
+64.666256987
+64.6183942236
+64.5605297221
+64.5429349704
+64.5228359122
+64.5027466871
+64.5027466871
+64.5127900713
+64.5605297221
+64.6335027451
+64.6637365006
+64.593225716
+64.6032912659
+64.6486168357
+64.6864264611
+64.7066058681
+64.7469945308
+64.7545718419
+64.7545718419
+64.8152408842
+64.9647693656
+65.0359240405
+65.1199445706
+65.1837120151
+65.2373539536
+65.2603650197
+65.2936262261
+65.3115473822
+65.2526932181
+65.1964774947
+65.1505404854
+65.1097510358
+65.1097510358
+65.1072030504
+65.0435551205
+65.0308374469
+65.1072030504
+65.1530911826
+65.2296864895
+65.2782715197
+65.3243530469
+65.355103115
+65.3884419739
+65.4500626417
+65.4963396225
+65.5607009393
+65.6200037653
+65.6483967119
+65.6871464897
+65.7259334138
+65.7388706586
+65.7362828785
+65.671642126
+65.6432328767
+65.6432328767
+65.6458147119
+65.6690586428
+65.6974860337
+65.7052424262
+65.7104141809
+65.7207596745
+65.689731128
+65.6638921711
+65.6458147119
+65.6613091826
+65.6871464897
+65.6949009
+65.7285205317
+65.7699369458
+65.803619057
+65.8451125473
+65.8554925841
+65.8944415074
+65.9568380808
+65.9750552781
+65.9386291089
+65.9308277794
+65.9178289152
+65.9178289152
+65.912630542
+65.9048342375
+65.8944415074
+65.891843743
+65.8658752899
+65.8503022322
+65.8139884345
+65.7751169823
+65.7130003062
+65.6432328767
+65.5684311694
+65.5246460145
+65.4783367454
+65.4423549406
+65.3935734589
+65.355103115
+65.3243530469
+65.316669164
+65.3192302969
+65.3320383828
+65.3474134161
+65.3192302969
+65.2910667057
+65.2322421503
+65.1786069438
+65.1173959479
+65.0308374469
+64.9901675107
+64.9647693656
+64.9165563696
+64.8430776235
+64.7848951202
+64.7343687943
+64.6813831618
+64.5756169436
+64.4676141674
+64.3448862607
+64.2399814168
+64.1851376593
+64.1204161823
+64.0408980137
+63.9243823548
+63.8254778104
+63.6997158049
+63.5792434212
+63.4346463578
+63.3222567842
+63.224772142
+63.1008080541
+63.0232136937
+62.9675313529
+62.9409267783
+62.928839364
+62.928839364
+62.9264222988
+62.7792437414
+62.622978819
+62.5271029929
+62.4649002888
+62.3908549991
+62.3646119966
+62.3169390985
+62.2645608236
+62.1671191345
+62.0533245878
+61.9516416648
+61.8572704218
+61.779571089
+61.7442999163
+61.7067094072
+61.6574219835
+61.5941357761
+61.4795213708
+61.2814237806
+61.1120180849
+61.0009895976
+60.9317414095
+60.8579986457
+60.8326785479
+60.7820826907
+60.704005004
+60.6489757616
+60.5734241343
+60.4843046318
+60.3407261485
+60.2293794273
+60.1228430236
+60.0188234529
+59.9330797065
+59.8295077878
+59.7239351823
+59.6477206415
+59.4778322299
+59.3108151312
+59.1976009764
+59.1156449819
+59.0691963256
+58.9433643397
+58.8090928426
+58.6642667394
+58.4718877019
+58.2803252241
+58.1350180088
+57.9793834503
+57.8608532589
+57.7211676873
+57.5797679148
+57.4302729143
+57.2812618334
+57.1518003801
+57.0396107407
+56.9108217253
+56.8118335653
+56.668987678
+56.5098512695
+56.4304852391
+56.3679224506
+56.2679947311
+56.1724290853
+56.0708431688
+55.9922121343
+55.9384870194
+55.8456446924
+55.7303601137
+55.5354231211
+55.3780020973
+55.2394086622
+55.0870091022
+54.9694820448
+54.8360900064
+54.7292365114
+54.6346752372
+54.5683903947
+54.5102141336
+54.4701327967
+54.4080713923
+54.376070371
+54.3141276205
+54.2462799387
+54.12080839
+54.0095448779
+53.9401318434
+53.8609213033
+53.7324724898
+53.5827042541
+53.472634709
+53.3569289861
+53.2121812903
+53.0990195653
+52.9919439405
+52.8928568354
+52.7591037277
+52.6276305689
+52.5099774913
+52.4022044773
+52.3100064649
+52.248632327
+52.1624477515
+52.0974252755
+52.0229406186
+51.940939701
+51.7944215562
+51.6521015768
+51.4497217553
+51.3535322
+51.306444076
+51.2782112165
+51.2368301069
+51.1541641919
+51.0641289546
+50.9985736482
+50.9443170576
+50.8863791903
+50.8135781376
+50.7483274814
+50.6645494462
+50.5567597267
+50.456595767
+50.356615684
+50.3011501993
+50.2383572097
+50.1756360683
+50.0853696203
+50.0026020072
+49.956673582
+49.8777658072
+49.8062953343
+49.7148008352
+49.6417133241
+49.5796641013
+49.5085746527
+49.4248412685
+49.3521309148
+49.2595611017
+49.152659407
+49.0549935822
+48.9232298602
+48.8259561376
+48.7540078996
+48.6875359518
+48.6014163075
+48.4867896021
+48.3723892643
+48.2706906257
+48.1976484543
+48.1140292222
+48.0003559932
+47.876276592
+47.7241915732
+47.6359486888
+47.5707329293
+47.5038285562
+47.4352411294
+47.3404029904
+47.221189015
+47.0864795242
+46.9538114228
+46.8544990566
+46.7640383413
+46.6841260852
+46.6285959134
+46.5540556288
+46.4865266946
+46.4311730529
+46.3741410493
+46.3206129248
+46.2567843759
+46.2050791287
+46.1379258023
+46.0742823022
+45.9918131385
+45.9094511162
+45.8494626621
+45.7878190835
+45.7142670815
+45.6612935433
+45.5793560647
+45.5230844406
+45.4379176699
+45.3358650132
+45.2543379763
+45.1813896791
+45.1169913024
+45.0374279113
+44.9545809994
+44.8904037785
+44.7942542189
+44.7403363557
+44.6864620249
+44.6107745725
+44.5334933157
+44.4428848694
+44.3390024933
+44.1968407874
+44.0816561375
+43.9666643528
+43.8701525907
+43.8036709767
+43.7405722584
+43.6675818194
+43.6145456549
+43.5383763217
+43.465595736
+43.3796788618
+43.2823221018
+43.193332373
+43.0978739131
+43.010755353
+42.9532818449
+42.8761748249
+42.7975115949
+42.7483901432
+42.6862169653
+42.6240964489
+42.5685593671
+42.5081694189
+42.4592407589
+42.3907947923
+42.3419433344
+42.2654735968
+42.1825840004
+42.0932954834
+41.9927692653
+41.9150337999
+41.8309096636
+41.7323431264
+41.6322898235
+41.5162608406
+41.3939729197
+41.3152304262
+41.2542189716
+41.2269396203
+41.1692025738
+41.1163137957
+41.0474507444
+41.0090413369
+40.916294451
+40.8300397873
+40.7454716965
+40.672144181
+40.6020663491
+40.5400019203
+40.505011856
+40.468447193
+40.4239555007
+40.3810754005
+40.3398043518
+40.2985537369
+40.2414711035
+40.1971003709
+40.1226735245
+40.0688737216
+39.9866576829
+39.8982060458
+39.8035377587
+39.7247269938
+39.6821990371
+39.6160858329
+39.5704655202
+39.5232971491
+39.4887231452
+39.4494510185
+39.3944994458
+39.3678210165
+39.327034257
+39.2894015737
+39.2361158346
+39.1906913599
+39.1327694258
+39.0733208633
+38.9951586725
+38.9311159149
+38.8858445618
+38.8327963469
+38.7953690228
+38.7439313108
+38.686292803
+38.6224649652
+38.5897896212
+38.544685338
+38.4825081871
+38.4095025672
+38.3396564253
+38.2838165147
+38.2078647172
+38.1582960488
+38.0979187602
+38.0391258997
+37.9710944473
+37.9123782129
+37.884577558
+37.8398041745
+37.8043087318
+37.7765385956
+37.6978988176
+37.6716993873
+37.6254818849
+37.5931423412
+37.5485001084
+37.5177239039
+37.4808048512
+37.4239143586
+37.3655194329
+37.2979459714
+37.210473724
+37.133804645
+37.0924268724
+37.0418763245
+37.0081895213
+36.963800696
+36.9347285043
+36.9071938093
+36.861318556
+36.8231043085
+36.7894871037
+36.761989983
+36.7329729004
+</ColumnCells>
+    </DataColumn>
+    <DataColumn>
+      <ID>129 </ID>
+      <BroadcastTo>4 4 106 107 131 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>Temperatura 3</DataObjectName>
+      <DataObjectShortName>Temp 3</DataObjectShortName>
+      <DataObjectColor>0x0 0x8b8b 0x4545| 0xffff 0x0</DataObjectColor>
+      <DataObjectDataSource>138</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>1</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>1</DataObjectThickLines>
+      <ColumnUnits>&#176;C</ColumnUnits>
+      <ColumnProtected>1</ColumnProtected>
+      <ColumnUserEditable>0</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1793972551</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnGeoRole>n-a</ColumnGeoRole>
+      <ColumnGeoDisplay>DD</ColumnGeoDisplay>
+      <ColumnUserCreated>0</ColumnUserCreated>
+      <ColumnPPStyle>3</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>1</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>1</ColumnSensorColumn>
+      <ColumnSensorInputColumn>1</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>0</ColumnAllowUserDelete>
+      <ColumnMatchTag>Temperatura</ColumnMatchTag>
+      <ColumnStartCollectTime>0</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1</ColumnStart>
+      <ColumnEnd>100</ColumnEnd>
+      <ColumnIncrement>1</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>10</ColumnNumber>
+      <ColumnShowLiveReadout>1</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+      <ColumnGroupID>130</ColumnGroupID>
+      <ColumnCells>
+22.502312186
+22.5095946068
+22.5168768645
+22.5270717518
+22.5314408918
+22.5343536194
+22.5416353251
+22.5460042709
+22.5489168692
+22.5547419885
+22.5620232428
+22.5678481307
+22.5693043366
+22.5707605361
+22.5693043366
+22.5707605361
+22.5722167293
+22.5693043366
+22.5693043366
+22.5722167293
+22.5678481307
+22.5678481307
+22.5678481307
+22.5693043366
+22.5722167293
+22.573672916
+22.579497599
+22.5838660443
+22.5882344321
+22.5911466588
+22.5911466588
+22.5984271144
+22.6027953116
+22.611531535
+22.611531535
+22.6129875501
+22.6173555575
+22.6188115474
+22.6217235082
+22.6304592395
+22.6333710997
+22.6406506404
+22.6464741604
+22.6508417347
+22.6552092529
+22.659576715
+22.6639441211
+22.6653999108
+22.6785017383
+22.6814131875
+22.679957466
+22.684324612
+22.6872360117
+22.684324612
+22.6886917024
+22.6901473869
+22.6959700633
+22.7017926413
+22.7105263245
+22.7178042255
+22.7279930308
+22.7279930308
+22.7309040633
+22.7338150714
+22.7352705664
+22.7498251831
+22.7556468606
+22.7600130554
+22.7716559772
+22.784753806
+22.7978511516
+22.8051272467
+22.8196789931
+22.824044402
+22.8313199657
+22.8458706534
+22.8546007854
+22.8706054835
+22.8836997152
+22.9113415628
+22.9200701382
+22.9404360188
+22.9520731673
+22.9695282155
+22.9913458944
+23.0087991388
+23.0160710894
+23.0378861187
+23.0596999214
+23.088783101
+23.1033238871
+23.1222261143
+23.148396957
+23.1774736853
+23.2007335781
+23.2196312749
+23.2428887999
+23.2748657937
+23.3068403806
+23.3228267812
+23.3635167838
+23.3838603715
+23.4129210253
+23.4448855762
+23.4753951015
+23.5088079843
+23.5494813255
+23.5741741586
+23.6119372289
+23.655506396
+23.686002554
+23.7324693805
+23.7687686937
+23.7992581906
+23.8471667718
+23.8820067519
+23.9328111862
+23.9647431007
+24.0097351253
+24.0561749731
+24.0982580636
+24.1403383535
+24.1737104315
+24.2230399966
+24.2767181242
+24.3129848129
+24.3608540684
+24.4203237381
+24.4681862706
+24.5073444134
+24.5581022393
+24.608857096
+24.6683091732
+24.7132582694
+24.7727039595
+24.8103994692
+24.8683900315
+24.8973842116
+24.9582697259
+25.0061063033
+25.0553907124
+25.1061229116
+25.1698981972
+25.2235255637
+25.272803405
+25.3336744029
+25.4046885519
+25.4583102337
+25.5264229603
+25.5887378132
+25.7046705457
+25.7727803608
+25.8220511909
+25.8901609566
+25.9539236171
+26.0060934717
+26.0742048946
+26.1437666855
+26.2002867364
+26.2669529162
+26.3336209814
+26.3915949554
+26.4524695778
+26.5336391991
+26.591620165
+26.6626501678
+26.7394830083
+26.8119714408
+26.8873645496
+26.9453630559
+27.0135157936
+27.0715221515
+27.1208306084
+27.1889971309
+27.2687739382
+27.3297001067
+27.3993363439
+27.4689796272
+27.5531417652
+27.6286070448
+27.6823092262
+27.7534359353
+27.8216679319
+27.8811964206
+27.9538012051
+28.0278686867
+28.1164737757
+28.1934718718
+28.2603108039
+28.3373332238
+28.4187302025
+28.4972349948
+28.5699380002
+28.6746536491
+28.7517541265
+28.8172292076
+28.8870821591
+28.9554929978
+29.0355651552
+29.105461566
+29.1710026513
+29.2511261476
+29.3268975952
+29.4056026077
+29.487243831
+29.5557811653
+29.6316281779
+29.7177093463
+29.7906798544
+29.863669417
+29.9322972923
+30.0067855727
+30.079833588
+30.1397481982
+30.211371764
+30.2830155689
+30.3459035979
+30.3868625646
+30.4483139218
+30.4966081166
+30.5595516025
+30.6474078914
+30.7177169205
+30.7865821742
+30.8540026113
+30.9361073077
+31.0109080312
+31.0813324021
+31.1400371581
+31.2031630205
+31.2486842178
+31.2942154433
+31.3500417187
+31.4102925557
+31.4970267427
+31.5749728951
+31.6588364969
+31.7280146219
+31.7795465476
+31.8325654762
+31.8988602496
+31.9578088289
+32.0447925625
+32.1052634354
+32.1657546686
+32.2395523109
+32.3163346876
+32.3768985038
+32.4315719011
+32.5084397421
+32.5675925817
+32.6400832341
+32.7274098902
+32.8044142491
+32.8918288015
+32.9555676621
+33.0297147176
+33.1009286934
+33.1692058817
+33.2271166354
+33.290992251
+33.3742192562
+33.4351823985
+33.4872437344
+33.5348586074
+33.5869549264
+33.65992082
+33.7239822078
+33.8104355966
+33.8745640329
+33.9461834703
+34.0238122936
+34.0940139315
+34.1642511481
+34.2375154083
+34.2928634754
+34.361706131
+34.448558016
+34.5204782447
+34.5849400055
+34.6839429781
+34.7544910502
+34.81155812
+34.8626396569
+34.9287755638
+34.9934417439
+35.0686767799
+35.1620312184
+35.2298325519
+35.3142598121
+35.3866725621
+35.451579094
+35.4908418773
+35.548249094
+35.6026603783
+35.6858369845
+35.7630169184
+35.8220712529
+35.8720637395
+35.9281416199
+35.9903138982
+36.0312750511
+36.0828767003
+36.1086863149
+36.1527280637
+36.1876699498
+36.2393430707
+36.2895192046
+36.3655867331
+36.459983115
+36.5514117318
+36.6413913695
+36.7207575282
+36.7711549048
+36.8414454345
+36.8827245377
+36.9423783043
+36.9653310335
+36.9729830543
+37.0035967044
+37.0663826265
+37.1353374712
+37.1767323379
+37.2288827615
+37.2825945813
+37.3624469427
+37.4346749768
+37.5284945059
+37.6085408213
+37.6840276722
+37.765741205
+37.8459786011
+37.9031104514
+37.9680032385
+38.049953481
+38.1010141118
+38.1273286104
+38.1737835081
+38.2233601833
+38.3008752316
+38.3598289085
+38.4374554819
+38.5042655
+38.555570585
+38.6209087363
+38.6567085919
+38.6956371481
+38.7252338017
+38.7922507673
+38.8577563833
+38.942046852
+39.0076600884
+39.0467381385
+39.1186859547
+39.1640739347
+39.2408162365
+39.2470838243
+39.2517848042
+39.2455168861
+39.2455168861
+39.2815634361
+39.3207610357
+39.3521315795
+39.3693901131
+39.3756667779
+39.4211859334
+39.447880498
+41.6871417112
+41.7420325938
+41.7856503039
+41.8212089808
+41.8681070012
+41.9166524799
+41.9717080688
+41.983047988
+41.999250808
+42.0300456948
+42.0754504469
+42.0997856321
+42.1354914244
+42.1955802422
+42.2573431157
+42.322411707
+42.3614800754
+42.3614800754
+42.3565954103
+42.3875370316
+42.429899052
+42.4918562744
+42.5081694189
+42.517959032
+42.571825096
+42.6224624073
+42.6437077801
+42.6665942829
+42.6943946325
+42.7058448994
+42.7663975064
+42.8237232303
+42.8663372692
+42.9089763038
+42.9368692263
+42.9368692263
+42.9614895498
+43.0156837818
+43.068274658
+43.1225492721
+43.1702790354
+43.2279263141
+43.2658341489
+43.2823221018
+43.3153094611
+43.3417103649
+43.3714231128
+43.4275811777
+43.463942504
+43.5102476439
+43.5433413725
+43.5449964672
+43.5367213826
+43.5267925646
+43.5251378977
+43.5433413725
+43.5698275621
+43.6327723092
+43.6775305737
+43.7538514505
+43.8103162758
+43.8784672724
+43.9150637319
+43.8635015632
+43.8369038275
+43.8635015632
+43.9133998367
+43.9716600074
+44.0399702532
+44.0299693997
+44.014970843
+44.0516397532
+44.0883282265
+44.1116856468
+44.1784650271
+44.2102080813
+44.2453096869
+44.2754111669
+44.2854479507
+44.2871208919
+44.2620310894
+44.2319355171
+44.2135503136
+44.2486536392
+44.2486536392
+44.2620310894
+44.2670483104
+44.2603587645
+44.2821021917
+44.3624458893
+44.4127090502
+44.4764293665
+44.5032769723
+44.5083120886
+44.5083120886
+44.5167047851
+44.5183834499
+44.5083120886
+44.4747517458
+44.4277952769
+44.4579778314
+44.5083120886
+44.5704428307
+44.6158177443
+44.6629056505
+44.7184446682
+44.7403363557
+44.77908541
+44.8279750656
+44.8769007021
+44.9224846134
+44.9613401182
+45.0222033314
+45.0695802501
+45.142404162
+45.1525720622
+45.1678268692
+45.1915636298
+45.2170054267
+45.2441542565
+45.2747101822
+45.3358650132
+45.3698647557
+45.4208977492
+45.4260032563
+45.4260032563
+45.4634559349
+45.504338127
+45.5588879762
+45.5878863536
+45.6083636574
+45.6134840012
+45.6100703934
+45.5742384333
+45.5844741026
+45.5861802055
+45.5742384333
+45.5708269048
+45.5776501424
+45.5622988731
+45.5605934021
+45.5571825954
+45.5520667235
+45.5503615231
+45.5418361965
+45.5179712702
+45.504338127
+45.504338127
+45.5179712702
+45.5605934021
+45.5725326465
+45.5810620322
+45.5981241916
+45.6527535167
+45.6954650126
+45.6920470468
+45.6425069828
+45.6766684533
+45.6988831606
+45.7228152999
+45.7655735142
+45.7775509359
+45.7775509359
+45.8015125139
+45.8340461843
+45.9094511162
+45.9883792528
+46.0381888196
+46.0811595884
+46.1344839713
+46.1052359888
+46.0777208517
+46.0536549326
+46.0261622335
+46.008985358
+45.9626310344
+45.9540506162
+45.9952472102
+45.998681468
+46.008985358
+46.0330342886
+46.0794401967
+46.1224390419
+46.1379258023
+46.158580737
+46.1620238846
+46.1757983581
+46.2171398805
+46.2550601815
+46.3016300771
+46.3568689046
+46.4052429523
+46.4501953177
+46.4674933285
+46.4657633112
+46.4657633112
+46.4553842164
+46.4173423242
+46.4000582255
+46.4346312146
+46.4657633112
+46.5038348103
+46.5350015711
+46.5211477468
+46.4969109858
+46.4899879323
+46.4657633112
+46.4588437224
+46.4674933285
+46.5107594061
+46.5505908195
+46.5783147151
+46.6199238274
+46.6771820838
+46.7049627779
+46.7223320662
+46.7640383413
+46.8057728945
+46.826650801
+46.826650801
+46.8057728945
+46.81447116
+46.8353520238
+46.8875852889
+46.9119760544
+46.9398631203
+46.9782286149
+47.0201093907
+47.0218550471
+47.0218550471
+47.0218550471
+47.0183637842
+47.0061459378
+46.9590428569
+46.9398631203
+46.9381198062
+46.9311470467
+46.932890162
+46.9259179986
+46.9189466295
+46.9172039113
+46.9311470467
+46.9485804364
+46.9939305378
+47.0236007536
+47.0515388589
+47.1004614107
+47.1336812874
+47.1336812874
+47.1092017229
+47.0917223549
+47.0987134991
+47.1301836027
+47.1669193482
+47.2176862785
+47.2457138492
+47.2562275372
+47.1966741136
+47.1371791736
+47.1057054472
+47.0497923519
+47.0515388589
+47.077742477
+47.077742477
+47.0428068248
+47.0044007309
+46.9433498976
+46.9102335346
+46.8806182822
+46.8370924163
+46.826650801
+46.8005545261
+46.7918582297
+46.7814242972
+46.8005545261
+46.8510173335
+46.9067486439
+46.9381198062
+46.9398631203
+46.8510173335
+46.784902078
+46.757085334
+46.74491946
+46.74491946
+46.783163163
+46.8196907104
+46.8196907104
+46.802293933
+46.7988151684
+46.802293933
+46.826650801
+46.847535808
+46.8823599596
+46.885843463
+46.894553088
+46.9102335346
+46.8684279256
+46.717120766
+46.6390040215
+46.604317134
+46.599115777
+46.604317134
+46.6233925159
+46.618189556
+46.5904478192
+46.5765816085
+46.5765816085
+46.5228793059
+46.4657633112
+46.4467362921
+46.4190709975
+46.3827789127
+46.3568689046
+46.305081076
+46.2981792684
+46.2705796372
+46.1999109434
+46.1344839713
+46.0794401967
+46.0742823022
+46.0794401967
+46.0244443363
+45.9454713575
+45.8888772783
+45.8015125139
+45.7245250804
+45.678377004
+45.6237259112
+45.6100703934
+45.5571825954
+45.4736740615
+45.417494301
+45.3817688675
+45.3664639814
+45.3426635402
+45.2747101822
+45.2068275209
+45.1407096652
+45.0678876302
+45.0289693772
+44.9985276357
+44.9630300059
+44.9596502737
+44.9596502737
+44.937686224
+44.9343077866
+44.9089750001
+44.8262886172
+44.7184446682
+44.6746828011
+44.6259052256
+44.5922861841
+44.5452477785
+44.5032769723
+44.4697191339
+44.4579778314
+44.4495924363
+44.4244424913
+44.429471732
+44.4445616987
+44.4512694321
+44.4177374187
+44.302179214
+44.2603587645
+44.2085370265
+44.1600942036
+44.1050112868
+44.0433041941
+43.9683295308
+43.9350335962
+43.8751412801
+43.7903822831
+43.7472115383
+43.6808471395
+43.6493461088
+43.624486879
+43.5731390374
+43.5301020151
+43.4622893106
+43.4094075204
+43.3648192052
+43.3417103649
+43.3070611882
+43.2790242061
+43.2526465311
+43.1752184115
+43.1192587344
+43.0699187417
+43.0649866034
+43.0764954518
+43.1143232106
+43.1209039844
+43.068274658
+43.0173266662
+43.0025420526
+42.9910450012
+42.9614895498
+42.9368692263
+42.9073358778
+42.8548618032
+42.8057017186
+42.7565747583
+42.720569301
+42.7042090374
+42.702573212
+42.6993016707
+42.6437077801
+42.6175605003
+42.5995896337
+42.5946892493
+42.550600441
+42.517959032
+42.4918562744
+42.4527193771
+42.4364184293
+42.4136031112
+42.3891658941
+42.3598518182
+42.2963774786
+42.2313315003
+42.1614698941
+42.1014082564
+42.0705843495
+42.0251825132
+41.9749478731
+41.8988488877
+41.8179756926
+41.7662616003
+41.7145822675
+41.6613242111
+41.5855350772
+41.5098198589
+41.450265969
+41.4004043646
+41.3811116115
+41.3666451578
+41.340933592
+41.2750860048
+41.1884435863
+41.1050994802
+41.029844145
+40.9226873548
+40.8651694587
+40.8188653619
+40.7821602355
+40.7630163228
+40.716770465
+40.6785178708
+40.6657709883
+40.6593982926
+40.637097767
+40.6116188874
+40.5845562501
+40.560684857
+40.5336389852
+40.4700366245
+40.4318986929
+40.3794876738
+40.3572626823
+40.3382174123
+40.3191764945
+40.262079785
+40.2176981508
+40.1606705048
+40.1432530965
+40.1115942947
+40.0831115155
+40.046730798
+39.9945596149
+39.9534775732
+39.9282061521
+39.9045209831
+39.8555923937
+39.8224630698
+39.7467867566
+39.6727512129
+39.6082185589
+39.5280128425
+39.4274662801
+39.3207610357
+39.2470838243
+39.2173167006
+39.18912541
+39.1703361471
+39.1531161148
+39.1421596326
+39.0952184004
+39.0201632291
+38.9514172715
+38.8936483655
+38.8265573997
+38.7392565784
+38.6738351425
+38.6209087363
+38.5680124199
+38.5462402957
+38.5369109371
+38.529137182
+38.5213640722
+38.5104828018
+38.4933862132
+38.4669703342
+38.4421151068
+38.3753491255
+38.3225907501
+38.2466080893
+38.1753323914
+38.1242324143
+38.0515003771
+37.9803686623
+37.9046550174
+37.8135671802
+37.6794043866
+37.6331833169
+37.613160827
+37.6085408213
+37.5808252598
+37.543883078
+37.5254170736
+37.505416053
+37.4592749623
+37.4285259124
+37.371664691
+37.331727123
+37.2657107021
+37.2426916961
+37.2258143605
+37.1890006594
+37.1537331505
+37.133804645
+37.1138799604
+37.0801699471
+37.0648508144
+37.0388134403
+36.983696818
+36.9423783043
+36.8659051887
+36.7787929391
+36.7222843738
+36.6551236436
+36.6215589386
+36.5773304274
+36.5514117318
+36.5254991969
+36.4797861726
+36.4615063003
+36.4508444463
+36.4188650822
+36.4051624809
+36.3929838187
+36.3564558777
+36.3321106047
+36.2910400455
+36.2560659459
+36.1861505119
+36.1390580983
+36.0965398823
+36.0889490225
+36.0737688258
+36.0312750511
+35.9918307163
+35.9736302245
+35.9660475391
+35.9478511378
+35.8750942804
+35.8251004877
+35.7978402138
+35.7660446187
+35.703992404
+35.6752476163
+35.6283632643
+35.5799859846
+35.5134993293
+35.4832903451
+35.4395008161
+35.4153478904
+35.3851635225
+35.3595127232
+35.3293422466
+35.3097354456
+35.2675161024
+35.2403827802
+35.2207902194
+35.2087348092
+35.1846275249
+35.1243798658
+35.0957724682
+35.0129985149
+34.9558410998
+34.9062253658
+34.8701533703
+34.8521212015
+34.8280822683
+34.8130602273
+34.8100560303
+34.7905304638
+34.7379763517
+34.7124577846
+34.7124577846
+34.7049532806
+34.6779406586
+</ColumnCells>
+    </DataColumn>
+    <DataColumn>
+      <ID>135 </ID>
+      <BroadcastTo>4 4 106 107 137 </BroadcastTo>
+      <Visible>1</Visible>
+      <DataObjectName>Temperatura 4</DataObjectName>
+      <DataObjectShortName>Temp 4</DataObjectShortName>
+      <DataObjectColor>0xffff 0x7f7f 0x0| 0xffff 0x0</DataObjectColor>
+      <DataObjectDataSource>138</DataObjectDataSource>
+      <DataObjectPrecisionDecimal>1</DataObjectPrecisionDecimal>
+      <DataObjectPrecision>1</DataObjectPrecision>
+      <DataObjectAutomaticDecimal>0</DataObjectAutomaticDecimal>
+      <DataObjectThickLines>1</DataObjectThickLines>
+      <ColumnUnits>&#176;C</ColumnUnits>
+      <ColumnProtected>1</ColumnProtected>
+      <ColumnUserEditable>0</ColumnUserEditable>
+      <ColumnTreatAsText>0</ColumnTreatAsText>
+      <ColumnDataType>0</ColumnDataType>
+      <StartTime>1793972551</StartTime>
+      <TimeOfDayFormat>hh:mm:ss</TimeOfDayFormat>
+      <ColumnGeoRole>n-a</ColumnGeoRole>
+      <ColumnGeoDisplay>DD</ColumnGeoDisplay>
+      <ColumnUserCreated>0</ColumnUserCreated>
+      <ColumnPPStyle>4</ColumnPPStyle>
+      <ColumnPPSize>2</ColumnPPSize>
+      <ColumnDisplayPPInterval>1</ColumnDisplayPPInterval>
+      <ColumnDisplayPPIntervalAuto>1</ColumnDisplayPPIntervalAuto>
+      <ColumnDisplayPPFromColumn>0</ColumnDisplayPPFromColumn>
+      <ColumnDisplayPPColumnID>0</ColumnDisplayPPColumnID>
+      <ColumnUseErrorCalculations>0</ColumnUseErrorCalculations>
+      <ColumnErrorFixed>1</ColumnErrorFixed>
+      <ColumnErrorConstant>1</ColumnErrorConstant>
+      <ColumnErrorValue>0</ColumnErrorValue>
+      <ColumnErrorColumnID>0</ColumnErrorColumnID>
+      <ColumnForceScientific>0</ColumnForceScientific>
+      <ColumnSensorColumn>1</ColumnSensorColumn>
+      <ColumnSensorInputColumn>1</ColumnSensorInputColumn>
+      <ColumnAllowUserDelete>0</ColumnAllowUserDelete>
+      <ColumnMatchTag>Temperatura</ColumnMatchTag>
+      <ColumnStartCollectTime>0</ColumnStartCollectTime>
+      <ColumnGenerateValues>0</ColumnGenerateValues>
+      <ColumnGenerateType>0</ColumnGenerateType>
+      <ColumnStart>1</ColumnStart>
+      <ColumnEnd>100</ColumnEnd>
+      <ColumnIncrement>1</ColumnIncrement>
+      <ColumnNameStart>0</ColumnNameStart>
+      <ColumnNumber>10</ColumnNumber>
+      <ColumnShowLiveReadout>1</ColumnShowLiveReadout>
+      <ColumnLastDataCollectedMode>0</ColumnLastDataCollectedMode>
+      <ColumnGroupID>136</ColumnGroupID>
+      <ColumnCells>
+22.4265652446
+22.4309357486
+22.4367629938
+22.4440469
+22.4455036613
+22.4469604159
+22.4557008038
+22.4600709081
+22.4629842778
+22.4688109378
+22.4717242281
+22.4819205363
+22.4848337079
+22.4877468533
+22.489203416
+22.4877468533
+22.4906599723
+22.4877468533
+22.4906599723
+22.489203416
+22.489203416
+22.489203416
+22.4950296016
+22.4950296016
+22.497942655
+22.5037686832
+22.5095946068
+22.5095946068
+22.5110510714
+22.5168768645
+22.5168768645
+22.5227025534
+22.5241589594
+22.5328972588
+22.5372663211
+22.5401789969
+22.5474605733
+22.5460042709
+22.5474605733
+22.5532857183
+22.5576545095
+22.5576545095
+22.5605670048
+22.5605670048
+22.5649356995
+22.5678481307
+22.5707605361
+22.5722167293
+22.573672916
+22.5780414379
+22.5780414379
+22.579497599
+22.5824099022
+22.579497599
+22.5809537538
+22.5824099022
+22.5824099022
+22.5838660443
+22.5853221799
+22.5867783092
+22.5882344321
+22.5882344321
+22.596971036
+22.5984271144
+22.5955149513
+22.6042513647
+22.6071634518
+22.6086194858
+22.6129875501
+22.6173555575
+22.6188115474
+22.6231794791
+22.6275473542
+22.6290033
+22.6348270204
+22.6348270204
+22.6421065298
+22.6450182898
+22.6493858828
+22.6639441211
+22.6639441211
+22.6726787658
+22.6770460045
+22.684324612
+22.6945144034
+22.6959700633
+22.700337006
+22.7017926413
+22.7076151212
+22.7163486575
+22.7221708929
+22.7279930308
+22.7309040633
+22.7367260553
+22.739637015
+22.7410924857
+22.7425479504
+22.7483697486
+22.7512806115
+22.7541914502
+22.7643791961
+22.7687452828
+22.7716559772
+22.7774772942
+22.7891196414
+22.8051272467
+22.8124031938
+22.8196789931
+22.8254995265
+22.8327750609
+22.8356852335
+22.8400504486
+22.853145778
+22.8589657728
+22.8676955906
+22.8764251998
+22.885154601
+22.8938837948
+22.904067593
+22.9186153899
+22.9258890747
+22.9331626175
+22.9418906821
+22.9506185434
+22.9593462022
+22.9666190968
+22.9855279691
+22.9957092802
+23.0102535399
+23.021888551
+23.0247972489
+23.0364318216
+23.0480660453
+23.0640625356
+23.0727876184
+23.087328993
+23.107686019
+23.1193181376
+23.1280420044
+23.1382196092
+23.1542124692
+23.1789274672
+23.193465003
+23.2050946617
+23.2239921597
+23.2312601994
+23.2457958996
+23.2617845889
+23.2879465956
+23.3024803502
+23.3213734965
+23.3329996377
+23.3475318775
+23.3751418056
+23.3925787662
+23.3983909346
+23.415826987
+23.4376211035
+23.4637726643
+23.4841117373
+23.497186384
+23.5146186763
+23.5451236344
+23.5669116925
+23.5828889738
+23.6032229339
+23.6250083815
+23.6438883252
+23.678741731
+23.6947154047
+23.7150448124
+23.7440854344
+23.7658648409
+23.7876433496
+23.8050655168
+23.8326494649
+23.8602320206
+23.8747486026
+23.9052322
+23.9357141602
+23.9574860013
+23.9792570303
+24.001027257
+24.0373092118
+24.0605285282
+24.0822958455
+24.1142198787
+24.143240341
+24.1650048357
+24.1896703937
+24.2273924326
+24.2506049586
+24.2767181242
+24.3115341805
+24.3260403739
+24.3550518995
+24.3811613064
+24.4145220217
+24.4406294073
+24.4768882419
+24.5073444134
+24.5290981388
+24.5566520575
+24.5972562413
+24.620457802
+24.6596091057
+24.6944089012
+24.7190580026
+24.7480561663
+24.7901020523
+24.8147488662
+24.8553424148
+24.8814375011
+24.9089816853
+24.9350755969
+24.9713162381
+24.9945097159
+25.0336478042
+25.0626382755
+25.0872797232
+25.1220669691
+25.1597522943
+25.187291034
+25.2278736592
+25.2568607095
+25.2843980143
+25.314833561
+25.3467179721
+25.3742541631
+25.4119347838
+25.4380210641
+25.4612086756
+25.4872945363
+25.5249737668
+25.5539575394
+25.5930853298
+25.6307636612
+25.724958607
+25.7626363614
+25.7988649197
+25.8177037647
+25.8481357572
+25.8945083978
+25.9234913831
+25.9626185633
+25.9945001317
+26.0278310526
+26.0684081371
+26.095942811
+26.1350713855
+26.1756496582
+26.2031852304
+26.2423152097
+26.2843443926
+26.322026388
+26.3640571031
+26.3901455847
+26.4379754283
+26.4669638521
+26.5075485074
+26.5466847144
+26.5655284412
+26.6046662099
+26.6481539378
+26.6698983445
+26.7177373705
+26.7554300659
+26.7902244187
+26.8351687448
+26.8757652535
+26.9221632426
+26.9555131499
+27.0062652636
+27.0396181844
+27.0802234365
+27.1077780901
+27.1425852615
+27.1875467193
+27.219456393
+27.2673233764
+27.2934339217
+27.3282494244
+27.3775742773
+27.4065905186
+27.4385098041
+27.4776855482
+27.5096082513
+27.5603976421
+27.5894219945
+27.6416692918
+27.6852121859
+27.714242579
+27.7577909197
+27.7853732725
+27.8318308674
+27.8710325521
+27.9145933657
+27.9538012051
+27.9930120445
+28.0322259386
+28.0583702585
+28.093231529
+28.1324534767
+28.1527920582
+28.1891131499
+28.2210780686
+28.2472328475
+28.2748423131
+28.3169863728
+28.3634948576
+28.4114619847
+28.4594345431
+28.5059586687
+28.545217512
+28.6121117803
+28.6659262724
+28.6979276212
+28.7270220798
+28.7575736679
+28.779397754
+28.8055883478
+28.8405120348
+28.8841713504
+28.9045475069
+28.9511259539
+28.9816964023
+29.0326531158
+29.0748801152
+29.1316764523
+29.1753725176
+29.2088767584
+29.2569540829
+29.2817239884
+29.3298122428
+29.345843287
+29.3837381093
+29.4201798
+29.4391311839
+29.4814115887
+29.5193231826
+29.5528643624
+29.5922436305
+29.6389221963
+29.6797720963
+29.7147909173
+29.7381391881
+29.7658677613
+29.8081955985
+29.8330114575
+29.8811897862
+29.9220750214
+29.9658874823
+30.0082463349
+30.0549949868
+30.0944456328
+30.1339022599
+30.1704415551
+30.1865204958
+30.2040623152
+30.2259912941
+30.2581572415
+30.2844779004
+30.3195764345
+30.344440904
+30.3693078837
+30.3927144052
+30.4366076994
+32.0138274963
+32.0595396893
+32.0860875492
+32.1318180432
+32.159852183
+32.1849390993
+32.2129816142
+32.2484101002
+32.2616976208
+32.2749861475
+32.3030430173
+32.3266733549
+32.3473525351
+32.3798533785
+32.4315719011
+32.4670450549
+32.5113968919
+32.5350559527
+32.5409712359
+32.5646344463
+32.6134503586
+32.6474820116
+32.6608006422
+32.688921268
+32.7200075331
+32.7496189647
+32.7703501519
+32.8014518708
+32.8221896539
+32.8577463151
+32.8977569278
+32.9348126849
+32.9496373929
+32.9852223235
+33.019332039
+33.0341646461
+33.0504821261
+33.0905413076
+33.1202213853
+33.1662366843
+33.2092956263
+33.2642503783
+33.2939638593
+33.3058508721
+33.3221970306
+33.3459764022
+33.3861125643
+33.4128759417
+33.4366696136
+33.4753423992
+33.4961703602
+33.5214653796
+33.5333704111
+33.5527181306
+33.5765341897
+33.5958875742
+33.6331127948
+33.674816297
+33.7046118292
+33.7418648596
+33.7865811942
+33.8223642876
+33.8656141466
+33.8641225536
+33.8656141466
+33.8850062793
+33.9133533954
+33.9611087582
+33.98947117
+34.0103734591
+34.0029079977
+34.0312788714
+34.0536810028
+34.0716053032
+34.102978397
+34.1493040639
+34.1747150737
+34.1911599968
+34.2195695133
+34.2285421659
+34.2315331812
+34.2360198269
+34.2494806501
+34.2749102812
+34.2898711114
+34.3003446746
+34.312315453
+34.3257838453
+34.3437437915
+34.3691911468
+34.4171051344
+34.4605420176
+34.4800183226
+34.495002039
+34.5084888314
+34.5219769977
+34.5354665401
+34.5519556307
+34.5429613258
+34.5474584016
+34.5624497623
+34.602934973
+34.6659368505
+34.7169606956
+34.749986832
+34.7875267939
+34.8100560303
+34.8250777192
+34.8506186357
+34.8731589796
+34.9152449641
+34.9468186112
+34.9949460029
+35.0205211601
+35.0626563142
+35.1017945319
+35.113839533
+35.1319092224
+35.1484754145
+35.1786014394
+35.2072279658
+35.2358611429
+35.2795772848
+35.3142598121
+35.3308505928
+35.3368841642
+35.3670565128
+35.4002547649
+35.4108197548
+35.4244046709
+35.4274237488
+35.4304429022
+35.4183667417
+35.4153478904
+35.4244046709
+35.4364814359
+35.448559411
+35.4561087607
+35.4802698652
+35.4953730249
+35.5044358342
+35.510478088
+35.5270958596
+35.5391829631
+35.5588271179
+35.5678947431
+35.5452269739
+35.5452269739
+35.5694060811
+35.5830089871
+35.595101766
+35.5981251532
+35.6162670941
+35.651046917
+35.6934014021
+35.7024793453
+35.703992404
+35.7176108091
+35.7478795924
+35.7721002548
+35.7872407193
+35.7902690479
+35.7932974553
+35.812984022
+35.8387330217
+35.88267098
+35.9114669708
+35.9614981684
+35.9872803222
+36.0085170426
+36.0039659849
+35.9948644128
+35.9903138982
+35.9903138982
+35.9887971001
+35.9857635644
+36.0039659849
+36.0161025415
+36.0358271974
+36.0570729511
+36.0722509177
+36.0904671539
+36.1056495847
+36.1162784965
+36.1314643879
+36.1451334342
+36.1557660587
+36.175515021
+36.1967870082
+36.2104639827
+36.2332626444
+36.275832569
+36.2895192046
+36.3092917562
+36.3199399695
+36.3062495967
+36.2834360481
+36.2727913224
+36.2727913224
+36.2773532234
+36.2971236168
+36.329067821
+36.3594994125
+36.3716743881
+36.3731963542
+36.3716743881
+36.3731963542
+36.3731963542
+36.3823285902
+36.4082073564
+36.4280010959
+36.4645527343
+36.4934980762
+36.5056878757
+36.5361683192
+36.5636079966
+36.5742808488
+36.6002049941
+36.6154573826
+36.6154573826
+36.6215589386
+36.6383399898
+36.6658055076
+36.681067147
+36.7085435443
+36.7451896624
+36.7711549048
+36.7894871037
+36.8154631045
+36.8460312098
+36.8628474116
+36.8735500169
+36.8766081023
+36.8659051887
+36.8659051887
+36.8659051887
+36.8643762891
+36.8689630539
+36.8766081023
+36.8796662759
+36.8857828877
+36.8873120957
+36.9209602603
+36.9515587964
+36.9791050714
+37.0005349381
+37.0173757579
+37.0525971251
+37.0556604128
+37.0571920903
+37.0587237902
+37.0786379327
+37.0954913289
+37.1322718413
+37.155266271
+37.1675320505
+37.1828663169
+37.1843998684
+37.1583325798
+37.155266271
+37.1430019415
+37.1476008952
+37.155266271
+37.1598657683
+37.1567994141
+37.155266271
+37.1491339251
+37.1322718413
+37.1246081624
+37.1077500558
+37.0954913289
+37.0786379327
+37.0725100998
+37.081701984
+37.115412493
+37.1537331505
+37.1644654696
+37.1905343018
+37.2135416689
+37.1997366341
+37.1782657986
+37.1782657986
+37.179799282
+37.1874670397
+37.2012704358
+37.2258143605
+37.2503641262
+37.2657107021
+37.2795245787
+37.2856646757
+37.3255842665
+37.3486218809
+37.3732010634
+37.390102688
+37.4039333766
+37.4146918788
+37.4131548802
+37.3762738776
+37.3516939551
+37.3440139427
+37.3532300268
+37.3685920157
+37.3778103194
+37.3824197838
+37.3778103194
+37.3778103194
+37.3870294568
+37.3793467844
+37.3685920157
+37.3532300268
+37.3516939551
+37.3516939551
+37.3516939551
+37.3547661217
+37.3670557128
+37.3747374589
+37.3563022397
+37.3394062123
+37.32404861
+37.331727123
+37.3547661217
+37.3547661217
+37.3470858784
+37.3255842665
+37.2825945813
+37.2749197469
+37.258037128
+37.2426916961
+37.2319512538
+37.2043381074
+37.1843998684
+37.1751988999
+37.1613989794
+37.1583325798
+37.1567994141
+37.1537331505
+37.133804645
+37.0939590894
+37.0694463182
+37.0663826265
+37.0633190246
+37.0571920903
+37.0602555126
+37.0786379327
+37.0832340435
+37.090894678
+37.0878303567
+37.0694463182
+37.0250315697
+37.0035967044
+36.9882887651
+36.9852274448
+36.9882887651
+36.9852274448
+36.9760440183
+36.983696818
+36.9852274448
+36.983696818
+36.9852274448
+36.995942456
+37.005127621
+36.9882887651
+36.9791050714
+36.9653310335
+36.9439083309
+36.9163712442
+36.8888413259
+36.8720210072
+36.8552033537
+36.8399168866
+36.8124067762
+36.7879593004
+36.77573766
+36.7650448698
+36.7650448698
+36.7803206114
+36.7787929391
+36.7635174155
+36.7451896624
+36.7268650406
+36.705490265
+36.6948044695
+36.6902251674
+36.6871724075
+36.6719099043
+36.6505460251
+36.6200335174
+36.6093561699
+36.6154573826
+36.6383399898
+36.6658055076
+36.6795408859
+36.6673315744
+36.6658055076
+36.6627534386
+36.6673315744
+36.6658055076
+36.6658055076
+36.6535977492
+36.6337630816
+36.6185081177
+36.6017301365
+36.588004626
+36.5819049557
+36.5864796763
+36.5895295971
+36.5773304274
+36.5727560916
+36.5788552488
+36.5834298412
+36.5849547481
+36.5849547481
+36.5788552488
+36.5712313557
+36.5803800915
+36.5773304274
+36.5712313557
+36.568181948
+36.5666572762
+36.5422654286
+36.4950217269
+36.4645527343
+36.4264783743
+36.4142973593
+36.394506078
+36.3731963542
+36.321461226
+36.2834360481
+36.2712707302
+36.2332626444
+36.2043851218
+36.1679188567
+36.1284270465
+36.1056495847
+36.0965398823
+36.0935034774
+36.0859128208
+36.0707330299
+36.0282403878
+35.9948644128
+35.9523999678
+35.9114669708
+35.8872172381
+35.8538821598
+35.8357034314
+35.8251004877
+35.8144985111
+35.8084406727
+35.8054118717
+35.8054118717
+35.8069262623
+35.8008688179
+35.7978402138
+35.7948116884
+35.7857265844
+35.7690723975
+35.7539342877
+35.7266906236
+35.7176108091
+35.7176108091
+35.708531697
+35.6934014021
+35.6555841701
+35.6298753725
+35.6147551596
+35.59661345
+35.5799859846
+35.5558047296
+35.5255850577
+35.5044358342
+35.4999043439
+35.4878212074
+35.4606385978
+35.448559411
+35.4183667417
+35.3866725621
+35.3399010621
+35.3187843465
+35.2554561072
+35.1996940255
+35.145463215
+35.1183567091
+35.1153452402
+35.1153452402
+35.1153452402
+35.109322521
+35.0837292137
+35.0476064179
+35.0175120479
+34.99645028
+34.9648642326
+34.9362931877
+34.8881880899
+34.8476135572
+34.8235754711
+34.8055498668
+34.7995418948
+34.7950361003
+34.7830214206
+34.7755128156
+34.7650015043
+34.7604969191
+34.7544910502
+34.7319715302
+34.7019516005
+34.6449328476
+34.5864394919
+34.5594513537
+34.5264733589
+34.4815166181
+34.439570722
+34.3736823563
+34.3257838453
+34.27640629
+34.2614469431
+34.2509763792
+34.2464892411
+34.2270466829
+34.2165787601
+34.2195695133
+34.2105974499
+34.1896649223
+34.1762099853
+34.1478094448
+34.1089550297
+34.0850500459
+34.0745929113
+34.0641365639
+34.0566682258
+34.0492002884
+34.0342656143
+34.0238122936
+34.0133597551
+33.9939499694
+33.9775284038
+33.9551384532
+33.8984331538
+33.8521903725
+33.797017007
+33.7716742056
+33.7314330438
+33.713551682
+33.6956725276
+33.674816297
+33.6554524738
+33.6420482564
+33.6197106259
+33.6077986164
+33.6018429745
+33.5958875742
+33.5810001293
+33.5720683855
+33.5437880993
+33.5199773179
+33.4931947588
+33.4738547991
+33.4515425776
+33.4307208417
+33.4247723059
+33.4113889624
+33.3786791369
+33.3430037768
+33.332600047
+33.3192248711
+33.2954496852
+33.286534947
+33.2701926123
+33.2464250599
+33.2107806316
+33.1959312219
+33.1588139398
+33.1291265097
+33.0979607985
+33.0608668582
+33.0311980131
+33.0000517316
+32.9659461644
+32.9481548601
+32.9392599527
+32.9333302898
+32.9170248512
+32.8977569278
+32.8873828504
+32.8710820812
+32.8488564168
+32.8207082958
+32.786640788
+32.7466575809
+32.702243235
+32.6667203769
+32.653401271
+32.6415629632
+32.6282458747
+32.6178888755
+32.603094278
+32.5942181482
+32.5794256448
+32.5587183317
+32.5468867266
+32.5439289553
+32.536534754
+</ColumnCells>
+    </DataColumn>
+  </DataSet>
+  <DataSourceServer>
+    <ID>13 </ID>
+    <BroadcastTo>0 </BroadcastTo>
+    <Visible>1</Visible>
+    <MBLLabQuestSource>
+      <ID>138 </ID>
+      <BroadcastTo>0 </BroadcastTo>
+      <Visible>1</Visible>
+      <MBLPortRef>&#60;PortRef PortType="2" Location=";05;000000;46923856 (USB)" DisplayName=";05;000000;46923856 (USB)" /&#62;</MBLPortRef>
+      <MBLAnalogOutWaveForm>0</MBLAnalogOutWaveForm>
+      <MBLAnalogOutFrequency>1</MBLAnalogOutFrequency>
+      <MBLAnalogOutAmplitude>2</MBLAnalogOutAmplitude>
+      <MBLAnalogOutCreateConstant>0</MBLAnalogOutCreateConstant>
+      <MBLSerialNumber>10858</MBLSerialNumber>
+    </MBLLabQuestSource>
+  </DataSourceServer>
+  <MBLBrain>
+    <MBLCollectionUserCollectMode>0</MBLCollectionUserCollectMode>
+    <MBLCollectionDropCounterMode>0</MBLCollectionDropCounterMode>
+    <MBLCollectionTimeUnit>2</MBLCollectionTimeUnit>
+    <MBLCollectionSampleAtZero>1</MBLCollectionSampleAtZero>
+    <MBLCollectionRepeat>0</MBLCollectionRepeat>
+    <MBLCollectionEnhancedTiming>0</MBLCollectionEnhancedTiming>
+    <MBLFastStart>0</MBLFastStart>
+    <MBLCollectionDeltaT>6</MBLCollectionDeltaT>
+    <MBLCollectionNumSamples>601</MBLCollectionNumSamples>
+    <MBLCollectionMaxDuration>3600</MBLCollectionMaxDuration>
+    <MBLCollectionOversampling>1</MBLCollectionOversampling>
+    <MBLCollectionNumEWEColumns>1</MBLCollectionNumEWEColumns>
+    <MBLColumnHeader>
+      <MBLColumnHeaderName>Inserisci</MBLColumnHeaderName>
+      <MBLColumnHeaderShortName>Inserisci</MBLColumnHeaderShortName>
+      <MBLColumnHeaderUnits></MBLColumnHeaderUnits>
+    </MBLColumnHeader>
+    <MBLColumnHeader>
+      <MBLColumnHeaderName></MBLColumnHeaderName>
+      <MBLColumnHeaderShortName></MBLColumnHeaderShortName>
+      <MBLColumnHeaderUnits></MBLColumnHeaderUnits>
+    </MBLColumnHeader>
+    <MBLColumnHeader>
+      <MBLColumnHeaderName></MBLColumnHeaderName>
+      <MBLColumnHeaderShortName></MBLColumnHeaderShortName>
+      <MBLColumnHeaderUnits></MBLColumnHeaderUnits>
+    </MBLColumnHeader>
+    <MBLCollectionSelectedEventTime>0</MBLCollectionSelectedEventTime>
+    <MBLCollectionSelectedEventName>Numero evento</MBLCollectionSelectedEventName>
+    <MBLCollectionSelectedEventShortName>Evento</MBLCollectionSelectedEventShortName>
+    <MBLCollectionSelectedEventUnits></MBLCollectionSelectedEventUnits>
+    <MBLCollectionEndDigitalAfterNum>0</MBLCollectionEndDigitalAfterNum>
+    <MBLCollectionNumDigitalEvents>10</MBLCollectionNumDigitalEvents>
+    <MBLCollectionTriggerEnabled>0</MBLCollectionTriggerEnabled>
+    <MBLTriggerType>0</MBLTriggerType>
+    <MBLTriggerValue>0</MBLTriggerValue>
+    <MBLTriggerUseConstant>0</MBLTriggerUseConstant>
+    <MBLTriggerConstant></MBLTriggerConstant>
+    <MBLTriggerPreTriggerData>0</MBLTriggerPreTriggerData>
+    <MBLRadiationInterval>5</MBLRadiationInterval>
+    <MBLRadiationIntervalTimeUnit>1</MBLRadiationIntervalTimeUnit>
+    <MBLStoreLatestMax>0</MBLStoreLatestMax>
+    <MBLEWEAverageData>0</MBLEWEAverageData>
+    <MBLSEAverageData>0</MBLSEAverageData>
+    <MBLContinuous>0</MBLContinuous>
+    <MBLChannel>
+      <MBLChannelIndex>1</MBLChannelIndex>
+      <MBLChannelSensorIDName>TMP</MBLChannelSensorIDName>
+      <MBLChannelSensorAutoID>10</MBLChannelSensorAutoID>
+      <MBLChannelManualSetup>0</MBLChannelManualSetup>
+      <MBLChannelCalibrationStorage>2</MBLChannelCalibrationStorage>
+      <MBLChannelReverse>0</MBLChannelReverse>
+      <MBLChannelOffset>0</MBLChannelOffset>
+      <MBLChannelX4Mode>0</MBLChannelX4Mode>
+      <MBLChannelResetOnCollect>1</MBLChannelResetOnCollect>
+      <MBLChannelTrigger>0</MBLChannelTrigger>
+      <MBLCalibration>
+        <MBLCalibrationUnits>C</MBLCalibrationUnits>
+        <MBLCalibrationPrettyUnits>°C</MBLCalibrationPrettyUnits>
+        <MBLCalibrationIDName>TMPC</MBLCalibrationIDName>
+        <MBLCalibrationUserName>Temperatura, acciaio inox °C</MBLCalibrationUserName>
+        <MBLCalibrationEquationType>12</MBLCalibrationEquationType>
+        <MBLCalibrationIDValue>10</MBLCalibrationIDValue>
+        <MBLCalibrationInterfaceOp>14</MBLCalibrationInterfaceOp>
+        <MBLCalibrationCoefficients>3 0.00102119 0.000222468 1.33342e-007 </MBLCalibrationCoefficients>
+        <MBLCalibrationYMin>0</MBLCalibrationYMin>
+        <MBLCalibrationYMax>50</MBLCalibrationYMax>
+        <MBLCalibrationNumPlaces>1</MBLCalibrationNumPlaces>
+        <MBLCalibrationDDSIndex>0</MBLCalibrationDDSIndex>
+        <MBLCalibrationRangeDesc></MBLCalibrationRangeDesc>
+        <MBLCalibrationColumnName>Temperatura</MBLCalibrationColumnName>
+        <MBLCalibrationShortColumnName>Temp</MBLCalibrationShortColumnName>
+        <MBLCalibrationExperimentType>1</MBLCalibrationExperimentType>
+        <MBLCalibrationTrace>1</MBLCalibrationTrace>
+      </MBLCalibration>
+      <MBLColumnHeaderName>Temperatura</MBLColumnHeaderName>
+      <MBLColumnHeaderShortName>Temp</MBLColumnHeaderShortName>
+      <MBLChannelMatch0>117
+Temperature</MBLChannelMatch0>
+      <MBLSensorSourceID>138</MBLSensorSourceID>
+      <MBLSensorPhotogateUnitsMeters>1</MBLSensorPhotogateUnitsMeters>
+      <MBLSensorPhotogateUnits>m</MBLSensorPhotogateUnits>
+      <MBLSensorOceanOpticsWavelength>-1</MBLSensorOceanOpticsWavelength>
+      <MBLSensorOceanOpticsWavelengthEnd>-1</MBLSensorOceanOpticsWavelengthEnd>
+      <MBLChannelZeroDefault>0</MBLChannelZeroDefault>
+    </MBLChannel>
+    <MBLChannel>
+      <MBLChannelIndex>2</MBLChannelIndex>
+      <MBLChannelSensorIDName>TMP</MBLChannelSensorIDName>
+      <MBLChannelSensorAutoID>10</MBLChannelSensorAutoID>
+      <MBLChannelManualSetup>0</MBLChannelManualSetup>
+      <MBLChannelCalibrationStorage>2</MBLChannelCalibrationStorage>
+      <MBLChannelReverse>0</MBLChannelReverse>
+      <MBLChannelOffset>0</MBLChannelOffset>
+      <MBLChannelX4Mode>0</MBLChannelX4Mode>
+      <MBLChannelResetOnCollect>1</MBLChannelResetOnCollect>
+      <MBLChannelTrigger>0</MBLChannelTrigger>
+      <MBLCalibration>
+        <MBLCalibrationUnits>C</MBLCalibrationUnits>
+        <MBLCalibrationPrettyUnits>°C</MBLCalibrationPrettyUnits>
+        <MBLCalibrationIDName>TMPC</MBLCalibrationIDName>
+        <MBLCalibrationUserName>Temperatura, acciaio inox °C</MBLCalibrationUserName>
+        <MBLCalibrationEquationType>12</MBLCalibrationEquationType>
+        <MBLCalibrationIDValue>10</MBLCalibrationIDValue>
+        <MBLCalibrationInterfaceOp>14</MBLCalibrationInterfaceOp>
+        <MBLCalibrationCoefficients>3 0.00102119 0.000222468 1.33342e-007 </MBLCalibrationCoefficients>
+        <MBLCalibrationYMin>0</MBLCalibrationYMin>
+        <MBLCalibrationYMax>50</MBLCalibrationYMax>
+        <MBLCalibrationNumPlaces>1</MBLCalibrationNumPlaces>
+        <MBLCalibrationDDSIndex>0</MBLCalibrationDDSIndex>
+        <MBLCalibrationRangeDesc></MBLCalibrationRangeDesc>
+        <MBLCalibrationColumnName>Temperatura</MBLCalibrationColumnName>
+        <MBLCalibrationShortColumnName>Temp</MBLCalibrationShortColumnName>
+        <MBLCalibrationExperimentType>1</MBLCalibrationExperimentType>
+        <MBLCalibrationTrace>1</MBLCalibrationTrace>
+      </MBLCalibration>
+      <MBLColumnHeaderName>Temperatura</MBLColumnHeaderName>
+      <MBLColumnHeaderShortName>Temp</MBLColumnHeaderShortName>
+      <MBLChannelMatch0>123
+Temperature</MBLChannelMatch0>
+      <MBLSensorSourceID>138</MBLSensorSourceID>
+      <MBLSensorPhotogateUnitsMeters>1</MBLSensorPhotogateUnitsMeters>
+      <MBLSensorPhotogateUnits>m</MBLSensorPhotogateUnits>
+      <MBLSensorOceanOpticsWavelength>-1</MBLSensorOceanOpticsWavelength>
+      <MBLSensorOceanOpticsWavelengthEnd>-1</MBLSensorOceanOpticsWavelengthEnd>
+      <MBLChannelZeroDefault>0</MBLChannelZeroDefault>
+    </MBLChannel>
+    <MBLChannel>
+      <MBLChannelIndex>3</MBLChannelIndex>
+      <MBLChannelSensorIDName>TMP</MBLChannelSensorIDName>
+      <MBLChannelSensorAutoID>10</MBLChannelSensorAutoID>
+      <MBLChannelManualSetup>0</MBLChannelManualSetup>
+      <MBLChannelCalibrationStorage>2</MBLChannelCalibrationStorage>
+      <MBLChannelReverse>0</MBLChannelReverse>
+      <MBLChannelOffset>0</MBLChannelOffset>
+      <MBLChannelX4Mode>0</MBLChannelX4Mode>
+      <MBLChannelResetOnCollect>1</MBLChannelResetOnCollect>
+      <MBLChannelTrigger>0</MBLChannelTrigger>
+      <MBLCalibration>
+        <MBLCalibrationUnits>C</MBLCalibrationUnits>
+        <MBLCalibrationPrettyUnits>°C</MBLCalibrationPrettyUnits>
+        <MBLCalibrationIDName>TMPC</MBLCalibrationIDName>
+        <MBLCalibrationUserName>Temperatura, acciaio inox °C</MBLCalibrationUserName>
+        <MBLCalibrationEquationType>12</MBLCalibrationEquationType>
+        <MBLCalibrationIDValue>10</MBLCalibrationIDValue>
+        <MBLCalibrationInterfaceOp>14</MBLCalibrationInterfaceOp>
+        <MBLCalibrationCoefficients>3 0.00102119 0.000222468 1.33342e-007 </MBLCalibrationCoefficients>
+        <MBLCalibrationYMin>0</MBLCalibrationYMin>
+        <MBLCalibrationYMax>50</MBLCalibrationYMax>
+        <MBLCalibrationNumPlaces>1</MBLCalibrationNumPlaces>
+        <MBLCalibrationDDSIndex>0</MBLCalibrationDDSIndex>
+        <MBLCalibrationRangeDesc></MBLCalibrationRangeDesc>
+        <MBLCalibrationColumnName>Temperatura</MBLCalibrationColumnName>
+        <MBLCalibrationShortColumnName>Temp</MBLCalibrationShortColumnName>
+        <MBLCalibrationExperimentType>1</MBLCalibrationExperimentType>
+        <MBLCalibrationTrace>1</MBLCalibrationTrace>
+      </MBLCalibration>
+      <MBLColumnHeaderName>Temperatura</MBLColumnHeaderName>
+      <MBLColumnHeaderShortName>Temp</MBLColumnHeaderShortName>
+      <MBLChannelMatch0>129
+Temperature</MBLChannelMatch0>
+      <MBLSensorSourceID>138</MBLSensorSourceID>
+      <MBLSensorPhotogateUnitsMeters>1</MBLSensorPhotogateUnitsMeters>
+      <MBLSensorPhotogateUnits>m</MBLSensorPhotogateUnits>
+      <MBLSensorOceanOpticsWavelength>-1</MBLSensorOceanOpticsWavelength>
+      <MBLSensorOceanOpticsWavelengthEnd>-1</MBLSensorOceanOpticsWavelengthEnd>
+      <MBLChannelZeroDefault>0</MBLChannelZeroDefault>
+    </MBLChannel>
+    <MBLChannel>
+      <MBLChannelIndex>4</MBLChannelIndex>
+      <MBLChannelSensorIDName>TMP</MBLChannelSensorIDName>
+      <MBLChannelSensorAutoID>10</MBLChannelSensorAutoID>
+      <MBLChannelManualSetup>0</MBLChannelManualSetup>
+      <MBLChannelCalibrationStorage>2</MBLChannelCalibrationStorage>
+      <MBLChannelReverse>0</MBLChannelReverse>
+      <MBLChannelOffset>0</MBLChannelOffset>
+      <MBLChannelX4Mode>0</MBLChannelX4Mode>
+      <MBLChannelResetOnCollect>1</MBLChannelResetOnCollect>
+      <MBLChannelTrigger>0</MBLChannelTrigger>
+      <MBLCalibration>
+        <MBLCalibrationUnits>C</MBLCalibrationUnits>
+        <MBLCalibrationPrettyUnits>°C</MBLCalibrationPrettyUnits>
+        <MBLCalibrationIDName>TMPC</MBLCalibrationIDName>
+        <MBLCalibrationUserName>Temperatura, acciaio inox °C</MBLCalibrationUserName>
+        <MBLCalibrationEquationType>12</MBLCalibrationEquationType>
+        <MBLCalibrationIDValue>10</MBLCalibrationIDValue>
+        <MBLCalibrationInterfaceOp>14</MBLCalibrationInterfaceOp>
+        <MBLCalibrationCoefficients>3 0.00102119 0.000222468 1.33342e-007 </MBLCalibrationCoefficients>
+        <MBLCalibrationYMin>0</MBLCalibrationYMin>
+        <MBLCalibrationYMax>50</MBLCalibrationYMax>
+        <MBLCalibrationNumPlaces>1</MBLCalibrationNumPlaces>
+        <MBLCalibrationDDSIndex>0</MBLCalibrationDDSIndex>
+        <MBLCalibrationRangeDesc></MBLCalibrationRangeDesc>
+        <MBLCalibrationColumnName>Temperatura</MBLCalibrationColumnName>
+        <MBLCalibrationShortColumnName>Temp</MBLCalibrationShortColumnName>
+        <MBLCalibrationExperimentType>1</MBLCalibrationExperimentType>
+        <MBLCalibrationTrace>1</MBLCalibrationTrace>
+      </MBLCalibration>
+      <MBLColumnHeaderName>Temperatura</MBLColumnHeaderName>
+      <MBLColumnHeaderShortName>Temp</MBLColumnHeaderShortName>
+      <MBLChannelMatch0>135
+Temperature</MBLChannelMatch0>
+      <MBLSensorSourceID>138</MBLSensorSourceID>
+      <MBLSensorPhotogateUnitsMeters>1</MBLSensorPhotogateUnitsMeters>
+      <MBLSensorPhotogateUnits>m</MBLSensorPhotogateUnits>
+      <MBLSensorOceanOpticsWavelength>-1</MBLSensorOceanOpticsWavelength>
+      <MBLSensorOceanOpticsWavelengthEnd>-1</MBLSensorOceanOpticsWavelengthEnd>
+      <MBLChannelZeroDefault>0</MBLChannelZeroDefault>
+    </MBLChannel>
+    <MBLGoogleMapsMarkerOptions>0</MBLGoogleMapsMarkerOptions>
+    <MBLGoogleMapsOpenAnnotations>0</MBLGoogleMapsOpenAnnotations>
+    <GoogleMapsSettings>
+      <GoogleMapsLatitudeColumnID>0</GoogleMapsLatitudeColumnID>
+      <GoogleMapsLongitudeColumnID>0</GoogleMapsLongitudeColumnID>
+      <GoogleMapsShowMarkers>1</GoogleMapsShowMarkers>
+      <GoogleMapsMarkerOptions>0</GoogleMapsMarkerOptions>
+      <GoogleMapsValueColumnID>0</GoogleMapsValueColumnID>
+      <GoogleMapsOpenAnnotations>0</GoogleMapsOpenAnnotations>
+      <GoogleMapsDrawLine>0</GoogleMapsDrawLine>
+      <GoogleMapsDrawLineSingleColor>0</GoogleMapsDrawLineSingleColor>
+      <GoogleMapsingleColor>0x0 0x0 0x0| 0xffff 0x0</GoogleMapsingleColor>
+      <GoogleMapsDrawLineColumnID>0</GoogleMapsDrawLineColumnID>
+      <GoogleMapsDrawLineAutoScale>0</GoogleMapsDrawLineAutoScale>
+      <GoogleMapsDrawLineSmooth>1</GoogleMapsDrawLineSmooth>
+      <GoogleMapsDrawLineMin>0</GoogleMapsDrawLineMin>
+      <GoogleMapsDrawLineMax>0</GoogleMapsDrawLineMax>
+    </GoogleMapsSettings>
+  </MBLBrain>
+  <FileCoherence>1</FileCoherence>
+</Document>
